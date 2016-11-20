@@ -12,3 +12,8 @@ db.app.insert_one({
 	'name' : 'Top'
 	})
 top = db.app.find_one()
+
+collection = db.app # create collection name "app"
+
+print(client.database_names())
+print(db.collection_names())

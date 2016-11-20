@@ -1,6 +1,8 @@
 import tornado.ioloop
 import tornado.web
 import tornado.websocket
-print "Final try"
-print "Hello, World!"
-print "Hello Top!"
+from pymongo import MongoClient
+
+
+client = MongoClient('localhost',27017)
+db = client['fdatascience']

@@ -1,0 +1,82 @@
+Country;Dietary survey;Population Class;Level 1 FoodEx Name;Level 2 FoodEx Name;Level 1 FoodEx Code;Number of consumers;Percentage of consumers;Mean consumption in grams/ kg body weight per day;Standard Deviation of consumption in grams/ kg body weight per day;Median consumption in grams/ kg body weight per day;99th percentile of consumption in grams/ kg body weight per day
+United Kingdom;Diet and Nutrition Survey of Infants and Young Children, 2011;Infants;non-alcoholic beverages;Soft drinks;A.01.001471;273;19.9;2.19;2.83;1.2;14.5
+United Kingdom;Diet and Nutrition Survey of Infants and Young Children, 2011;Infants;non-alcoholic beverages;Tea (Infusion);A.01.001515;34;2.5;4.14;5.53;1.93;21.12
+United Kingdom;Diet and Nutrition Survey of Infants and Young Children, 2011;Infants;non-alcoholic beverages;Coffee (Beverage);A.01.001522;1;0.1;0.13;0;0.13;0.13
+United Kingdom;Diet and Nutrition Survey of Infants and Young Children, 2011;Infants;alcoholic beverages;Beer and beer-like beverage;A.01.001535;1;0.1;0.8;0;0.8;0.8
+United Kingdom;Diet and Nutrition Survey of Infants and Young Children, 2011;Infants;alcoholic beverages;Wine;A.01.001541;13;0.9;0.39;0.58;0.2;2.13
+United Kingdom;Diet and Nutrition Survey of Infants and Young Children, 2011;Toddlers;non-alcoholic beverages;Soft drinks;A.01.001471;700;53.3;4.44;5.94;2.62;30.53
+United Kingdom;Diet and Nutrition Survey of Infants and Young Children, 2011;Toddlers;non-alcoholic beverages;Tea (Infusion);A.01.001515;100;7.6;4.79;5.22;2.43;21.07
+United Kingdom;Diet and Nutrition Survey of Infants and Young Children, 2011;Toddlers;non-alcoholic beverages;Coffee (Beverage);A.01.001522;1;0.1;0.02;0;0.02;0.02
+United Kingdom;Diet and Nutrition Survey of Infants and Young Children, 2011;Toddlers;non-alcoholic beverages;Cocoa beverage;A.01.001531;2;0.2;2.1;0.12;2.1;2.19
+United Kingdom;Diet and Nutrition Survey of Infants and Young Children, 2011;Toddlers;alcoholic beverages;Beer and beer-like beverage;A.01.001535;3;0.2;0.26;0.22;0.2;0.51
+United Kingdom;Diet and Nutrition Survey of Infants and Young Children, 2011;Toddlers;alcoholic beverages;Wine;A.01.001541;31;2.4;0.3;0.25;0.24;0.88
+United Kingdom;National Diet and Nutrition Survey;Adults;non-alcoholic beverages;Soft drinks;A.01.001471;1,120;65;2.85;3.17;1.7;14.54
+United Kingdom;National Diet and Nutrition Survey;Adults;non-alcoholic beverages;Tea (Infusion);A.01.001515;1,385;80.3;7.58;6.35;6.04;30.84
+United Kingdom;National Diet and Nutrition Survey;Adults;non-alcoholic beverages;Coffee (Beverage);A.01.001522;598;34.7;1.96;2.39;1.02;11.47
+United Kingdom;National Diet and Nutrition Survey;Adults;non-alcoholic beverages;Coffee imitates beverage;A.01.001530;2;0.1;0.04;0.02;0.04;0.05
+United Kingdom;National Diet and Nutrition Survey;Adults;non-alcoholic beverages;Cocoa beverage;A.01.001531;227;13.2;0.33;0.61;0.1;2.51
+United Kingdom;National Diet and Nutrition Survey;Adults;alcoholic beverages;Beer and beer-like beverage;A.01.001535;752;43.6;6.22;7.14;3.83;32.05
+United Kingdom;National Diet and Nutrition Survey;Adults;alcoholic beverages;Wine;A.01.001541;784;45.5;1.56;1.6;1.07;8.09
+United Kingdom;National Diet and Nutrition Survey;Adults;alcoholic beverages;Fortified and liqueur wines (e.g. Vermouth, Sherry;A.01.001546;164;9.5;0.26;0.7;0.07;3.82
+United Kingdom;National Diet and Nutrition Survey;Adults;alcoholic beverages;Wine-like drinks (e.g. Cider, Perry);A.01.001549;96;5.6;4.72;10.83;1.82;86.35
+United Kingdom;National Diet and Nutrition Survey;Adults;alcoholic beverages;Liqueur;A.01.001552;95;5.5;0.18;0.2;0.11;1.29
+United Kingdom;National Diet and Nutrition Survey;Adults;alcoholic beverages;Spirits;A.01.001561;344;20;0.32;0.41;0.17;2.18
+United Kingdom;National Diet and Nutrition Survey;Adults;alcoholic beverages;Alcoholic mixed drinks;A.01.001569;92;5.3;2.53;2.35;1.7;10.15
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Toddlers;non-alcoholic beverages;Soft drinks;A.01.001471;129;69.7;6.46;6.97;4.35;33.94
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Toddlers;non-alcoholic beverages;Tea (Infusion);A.01.001515;38;20.5;8.84;11.64;4.89;52.39
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Toddlers;non-alcoholic beverages;Cocoa beverage;A.01.001531;8;4.3;0.41;0.33;0.33;1.03
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Toddlers;alcoholic beverages;Wine;A.01.001541;5;2.7;0.25;0.27;0.12;0.64
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Toddlers;alcoholic beverages;Wine-like drinks (e.g. Cider, Perry);A.01.001549;2;1.1;0.68;0.33;0.68;0.91
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Toddlers;alcoholic beverages;Liqueur;A.01.001552;1;0.5;0.08;0;0.08;0.08
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Toddlers;alcoholic beverages;Spirits;A.01.001561;1;0.5;0.02;0;0.02;0.02
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Other children;non-alcoholic beverages;Soft drinks;A.01.001471;574;88.2;6.46;5.95;4.84;29.14
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Other children;non-alcoholic beverages;Tea (Infusion);A.01.001515;138;21.2;4.44;4.04;2.99;18.53
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Other children;non-alcoholic beverages;Coffee (Beverage);A.01.001522;1;0.2;2.99;0;2.99;2.99
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Other children;non-alcoholic beverages;Cocoa beverage;A.01.001531;90;13.8;0.65;0.99;0.24;4.49
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Other children;alcoholic beverages;Beer and beer-like beverage;A.01.001535;2;0.3;0.9;0.54;0.9;1.28
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Other children;alcoholic beverages;Wine;A.01.001541;20;3.1;0.14;0.13;0.1;0.47
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Other children;alcoholic beverages;Wine-like drinks (e.g. Cider, Perry);A.01.001549;1;0.2;0.37;0;0.37;0.37
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Other children;alcoholic beverages;Spirits;A.01.001561;1;0.2;0.05;0;0.05;0.05
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Adolescents;non-alcoholic beverages;Soft drinks;A.01.001471;603;90.5;5.71;4.43;4.67;18.81
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Adolescents;non-alcoholic beverages;Tea (Infusion);A.01.001515;259;38.9;3.18;3.02;2.35;15.37
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Adolescents;non-alcoholic beverages;Coffee (Beverage);A.01.001522;12;1.8;1.42;1.25;0.81;4.65
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Adolescents;non-alcoholic beverages;Cocoa beverage;A.01.001531;82;12.3;0.39;0.5;0.17;2.8
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Adolescents;alcoholic beverages;Beer and beer-like beverage;A.01.001535;21;3.2;4.34;4.43;2.72;16.09
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Adolescents;alcoholic beverages;Wine;A.01.001541;38;5.7;0.55;1.32;0.16;7.62
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Adolescents;alcoholic beverages;Fortified and liqueur wines (e.g. Vermouth, Sherry;A.01.001546;2;0.3;0.12;0.13;0.12;0.21
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Adolescents;alcoholic beverages;Wine-like drinks (e.g. Cider, Perry);A.01.001549;8;1.2;2.96;2.94;1.85;7.89
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Adolescents;alcoholic beverages;Liqueur;A.01.001552;2;0.3;2.4;3.3;2.4;4.74
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Adolescents;alcoholic beverages;Spirits;A.01.001561;12;1.8;0.53;0.48;0.33;1.79
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Adolescents;alcoholic beverages;Alcoholic mixed drinks;A.01.001569;15;2.3;1.81;1.04;1.33;3.78
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Adults;non-alcoholic beverages;Soft drinks;A.01.001471;822;64.9;3.33;3.43;2.28;16.26
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Adults;non-alcoholic beverages;Tea (Infusion);A.01.001515;939;74.2;7.31;5.58;6.4;25.93
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Adults;non-alcoholic beverages;Coffee (Beverage);A.01.001522;297;23.5;2.24;2.21;1.47;12.34
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Adults;non-alcoholic beverages;Cocoa beverage;A.01.001531;129;10.2;0.37;0.47;0.15;2.1
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Adults;alcoholic beverages;Beer and beer-like beverage;A.01.001535;375;29.6;7.72;8.76;5.17;45.3
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Adults;alcoholic beverages;Wine;A.01.001541;441;34.8;2.33;2.27;1.85;11.87
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Adults;alcoholic beverages;Fortified and liqueur wines (e.g. Vermouth, Sherry;A.01.001546;30;2.4;0.5;0.92;0.2;4.93
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Adults;alcoholic beverages;Wine-like drinks (e.g. Cider, Perry);A.01.001549;77;6.1;5.65;9.65;1.98;59.78
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Adults;alcoholic beverages;Liqueur;A.01.001552;36;2.8;0.53;0.88;0.23;4.74
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Adults;alcoholic beverages;Spirits;A.01.001561;161;12.7;0.51;0.8;0.33;4.56
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Adults;alcoholic beverages;Alcoholic mixed drinks;A.01.001569;24;1.9;3.38;3.7;2.16;18.58
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Elderly;non-alcoholic beverages;Soft drinks;A.01.001471;64;38.6;1.47;1.42;0.99;6.58
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Elderly;non-alcoholic beverages;Tea (Infusion);A.01.001515;139;83.7;8.69;5.96;7.51;23.93
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Elderly;non-alcoholic beverages;Coffee (Beverage);A.01.001522;46;27.7;2.01;2.09;1.16;8.92
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Elderly;non-alcoholic beverages;Cocoa beverage;A.01.001531;17;10.2;0.26;0.43;0.13;1.71
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Elderly;alcoholic beverages;Beer and beer-like beverage;A.01.001535;32;19.3;7.21;6.72;5.28;29.8
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Elderly;alcoholic beverages;Wine;A.01.001541;53;31.9;2.15;1.85;1.5;7.17
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Elderly;alcoholic beverages;Fortified and liqueur wines (e.g. Vermouth, Sherry;A.01.001546;9;5.4;0.21;0.16;0.15;0.53
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Elderly;alcoholic beverages;Wine-like drinks (e.g. Cider, Perry);A.01.001549;6;3.6;4.14;3.13;3.78;8.98
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Elderly;alcoholic beverages;Liqueur;A.01.001552;4;2.4;0.29;0.16;0.29;0.46
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Elderly;alcoholic beverages;Spirits;A.01.001561;19;11.4;0.39;0.29;0.37;0.9
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Very elderly;non-alcoholic beverages;Soft drinks;A.01.001471;46;33.1;2.32;2.93;1.88;19.44
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Very elderly;non-alcoholic beverages;Tea (Infusion);A.01.001515;120;86.3;8.77;5.18;8.22;21.92
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Very elderly;non-alcoholic beverages;Coffee (Beverage);A.01.001522;33;23.7;2.71;2.85;1.08;9.66
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Very elderly;non-alcoholic beverages;Cocoa beverage;A.01.001531;15;10.8;0.28;0.29;0.22;1.05
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Very elderly;alcoholic beverages;Beer and beer-like beverage;A.01.001535;27;19.4;4.71;3.99;4.28;16.22
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Very elderly;alcoholic beverages;Wine;A.01.001541;35;25.2;1.69;1.25;1.17;5.78
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Very elderly;alcoholic beverages;Fortified and liqueur wines (e.g. Vermouth, Sherry;A.01.001546;10;7.2;0.29;0.22;0.27;0.7
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Very elderly;alcoholic beverages;Wine-like drinks (e.g. Cider, Perry);A.01.001549;1;0.7;0.97;0;0.97;0.97
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Very elderly;alcoholic beverages;Liqueur;A.01.001552;6;4.3;0.41;0.34;0.39;0.97
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Very elderly;alcoholic beverages;Spirits;A.01.001561;16;11.5;0.56;0.54;0.39;1.99
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Very elderly;alcoholic beverages;Alcoholic mixed drinks;A.01.001569;1;0.7;3.36;0;3.36;3.36

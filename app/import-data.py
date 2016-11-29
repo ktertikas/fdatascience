@@ -1,9 +1,30 @@
 import os
 import json
 from pymongo import MongoClient
-import numpy as np
-import pandas as pd
+# import numpy as np
+# import pandas as pd
 import csv
+
+file = open('first_dataset.CSV')
+
+# =====USE THIS=====
+count_break = 0
+fdata = csv.DictReader(file, delimiter=';')
+client = MongoClient('localhost',27017)
+db = client.fdatascience # create db name "fdatascience"
+collection = db.top # create collection name "top"
+
+for row in fdata:
+	print(row)
+	collection.insert_one(row)
+	
+	count_break+=1
+	if(count_break==2): 
+		break
+
+print(client.database_names())
+print(db.collection_names())
+# =====USE THIS=====
 
 # (1)read data from flatfiles (.xlsx / .csv)
 
@@ -13,18 +34,6 @@ import csv
 # print("Files in '%s': %s" % (cwd, files))
 
 # file = open('test-data.csv')
-file = open('first_dataset.CSV')
-
-# =====USE THIS=====
-count = 0
-f = csv.DictReader(file, delimiter=';')
-# print(count)
-for i in f:
-	print(i)
-	
-	count+=1
-	if(count==2): 
-		break
 
 # =====Numpy=====
 # data = np.loadtxt(file, delimiter=';', dtype=str)

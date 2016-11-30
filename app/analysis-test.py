@@ -12,9 +12,9 @@ print(db.collection_names())
 
 s_infants = db.consumption.find( { "Population Class": "Infants" } )
 print(type(s_infants))
-infants = []
+con_infants = []
 for i in s_infants:
-	infants.append(i)
+	con_infants.append(i)
 # print(infants)
 # print(type(infants))
 # Level 1 FoodEx Name
@@ -24,10 +24,9 @@ for i in s_infants:
 mean_weights_inf = []
 median_weights_inf = []
 
-for i in infants:
+for i in con_infants:
 	median_weights_inf.append(float(i["Median consumption in grams/ kg body weight per day"]))
 	mean_weights_inf.append(float(i["Mean consumption in grams/ kg body weight per day"]))
-	i["Level 1 FoodEx Name"]
 
 x = np.array(mean_weights_inf)
 y = np.array(median_weights_inf)

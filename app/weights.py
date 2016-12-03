@@ -33,7 +33,7 @@ def getConDict (  aaa ) :
 		dic["MedianWeight"] = w_median[count_row]
 		f_con.append(dic)
 		count_row+=1
-		conc_coll.insert_one(dic)
+		# conc_coll.insert_one(dic)
 	# print(f_con)
 
 def getBevDict (  aaa ) :
@@ -67,5 +67,5 @@ def getBevDict (  aaa ) :
 		dic["MedianWeight"] = w_median[count_row]
 		f_con.append(dic)
 		count_row+=1
-		conc_coll.insert_one(dic)
+		# conc_coll.insert_one(dic)
 	# print(f_con)

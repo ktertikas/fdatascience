@@ -1,6 +1,6 @@
 from pymongo import MongoClient
 import numpy as np
-from weights import getDict
+from weights import getConDict, getBevDict
 import json
 # import pandas as pd
 
@@ -85,7 +85,12 @@ print(db.collection_names())
 # print(f_bev_infants)
 
 s_popclass = db.consumption.distinct("Population Class")
-print(s_popclass)
+# print(s_popclass)
 for i in s_popclass:
 	# print()
-	getDict(json.loads('{"Population Class": "'+ str(i) + '"}'))
+	getConDict(json.loads('{"Population Class": "'+ str(i) + '"}'))
+	
+s_popclass = db.beverages_consumption.distinct("Population Class")
+# print(s_popclass)
+for i in s_popclass:	
+	getBevDict(json.loads('{"Population Class": "'+ str(i) + '"}'))

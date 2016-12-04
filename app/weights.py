@@ -34,7 +34,7 @@ def getConDict (  aaa ) :
 		f_con.append(dic)
 		count_row+=1
 		# conc_coll.insert_one(dic)
-	# print(f_con)
+	print(f_con)
 
 def getBevDict (  aaa ) :
 	client = MongoClient('localhost',27017)
@@ -68,4 +68,4 @@ def getBevDict (  aaa ) :
 		f_con.append(dic)
 		count_row+=1
 		# conc_coll.insert_one(dic)
-	# print(f_con)
+	print(f_con)

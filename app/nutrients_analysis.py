@@ -30,7 +30,15 @@ for i in nutr_keys:
 	temp = np.array([])
 	for j in nutr_key_value:
 		temp = np.append(temp, j[i])
-	print(temp)
+	plt.hist(temp, bins=20)
+	plt.savefig('test'+i+'.png')
+	plt.clf()
+	plt.boxplot(temp)
+	plt.savefig('boxplot'+ i +'.png')
+	plt.clf()
+	print("mean value of "+ i +" is " + str(np.mean(temp)))
+	print("median value of "+i+" is " + str(np.median(temp)))
+	print("standard deviation value of "+ i +" is " + str(np.std(temp)))
 	# final = np.vstack(final, temp)
 # print (final)
 

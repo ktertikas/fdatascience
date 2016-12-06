@@ -30,14 +30,18 @@ nutr_keys = ['VitaminC', 'Fat', 'VitaminK', 'Nitrogen', 'Cholesterol', 'EnergyJ'
 # 	temp = np.append(temp, j['VitaminC'])
 # print(temp)
 
-# final = np.array([])
-# for i in nutr_keys:
-# 	nutr_key_value = db.nutrients_clean.find( {i:{'$ne':None}}, {'_id':0, i:1} )
-# 	temp = np.array([])
-# 	for j in nutr_key_value:
-# 		temp = np.append(temp, j[i])
-# 	print(temp)
-
-# plt.hist([1, 2, 1], bins=3)
-# plt.show()
-# plt.savefig('test.png')
+final = np.array([])
+for i in nutr_keys:
+	nutr_key_value = db.nutrients_clean.find( {i:{'$ne':None}}, {'_id':0, i:1} )
+	temp = np.array([])
+	for j in nutr_key_value:
+		temp = np.append(temp, j[i])
+	# plt.hist(temp, bins=20)
+	# plt.savefig('hist_'+i+'.png')
+	# plt.clf()
+	# plt.boxplot(temp)
+	# plt.savefig('boxplot_'+i+'.png')
+	# plt.clf()
+	print("mean value of "+i+" is "+str(np.mean(temp)))
+	print("median value of "+i+" is "+str(np.median(temp)))
+	print("standard deviation value of "+i+" is "+str(np.std(temp)))

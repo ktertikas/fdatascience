@@ -24,15 +24,19 @@ db = client.fdatascience # create db name "fdatascience"
 # print(a)
 nutr_keys = ['VitaminC', 'Fat', 'VitaminK', 'Nitrogen', 'Cholesterol', 'EnergyJ', 'VitaminD', 'Glucose', 'Protein', 'Sugars', 'Carbohydrate', 'VitaminB12', 'VitaminE', 'Lactose', 'Sucrose', 'VitaminB6', 'Water', 'EnergyCal']
 
-final = np.array([])
-for i in nutr_keys:
-	nutr_key_value = db.nutrients_clean.find( {i:{'$ne':None}}, {'_id':0, i:1} )
-	temp = np.array([])
-	for j in nutr_key_value:
-		temp = np.append(temp, j[i])
-	print(temp)
-	# final = np.vstack(final, temp)
-# print (final)
+# nutr_key_value = db.nutrients_clean.find( {'VitaminC':{'$ne':None}}, {'_id':0, 'VitaminC':1} )
+# temp = np.array([])
+# for j in nutr_key_value:
+# 	temp = np.append(temp, j['VitaminC'])
+# print(temp)
+
+# final = np.array([])
+# for i in nutr_keys:
+# 	nutr_key_value = db.nutrients_clean.find( {i:{'$ne':None}}, {'_id':0, i:1} )
+# 	temp = np.array([])
+# 	for j in nutr_key_value:
+# 		temp = np.append(temp, j[i])
+# 	print(temp)
 
 # plt.hist([1, 2, 1], bins=3)
 # plt.show()

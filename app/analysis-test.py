@@ -90,7 +90,7 @@ for i in s_popclass:
 	# print()
 	getConDict(json.loads('{"Population Class": "'+ str(i) + '"}'))
 	
-s_popclass = db.beverages_consumption.distinct("Population Class")
-# print(s_popclass)
-for i in s_popclass:	
-	getBevDict(json.loads('{"Population Class": "'+ str(i) + '"}'))
+# s_popclass = db.beverages_consumption.distinct("Population Class")
+# # print(s_popclass)
+# for i in s_popclass:	
+# 	getBevDict(json.loads('{"Population Class": "'+ str(i) + '"}'))

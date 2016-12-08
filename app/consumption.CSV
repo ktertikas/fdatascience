@@ -1,124 +1,85 @@
 Country;Dietary survey;Population Class;Level 1 FoodEx Name;Level 1 FoodEx Code;Number of consumers;Percentage of consumers;Mean consumption in grams/ kg body weight per day;Standard Deviation of consumption in grams/ kg body weight per day;Median consumption in grams/ kg body weight per day;99th percentile of consumption in grams/ kg body weight per day
 United Kingdom;Diet and Nutrition Survey of Infants and Young Children, 2011;Infants;grains and grain-based products;A.01.000001;1154;84.3;4.12;3.92;3.25;17.66
-United Kingdom;Diet and Nutrition Survey of Infants and Young Children, 2011;Toddlers;grains and grain-based products;A.01.000001;1307;99.5;7.58;4.3;6.91;21.54
-United Kingdom;National Diet and Nutrition Survey;Adults;grains and grain-based products;A.01.000001;1721;99.8;3.06;1.46;2.85;7.45
-United Kingdom;National Diet and Nutrition Survey - Years 1-3;Toddlers;grains and grain-based products;A.01.000001;185;100;8.12;3.8;7.37;22.68
-United Kingdom;National Diet and Nutrition Survey - Years 1-3;Other children;grains and grain-based products;A.01.000001;651;100;7.41;3.03;6.93;16.57
-United Kingdom;National Diet and Nutrition Survey - Years 1-3;Adolescents;grains and grain-based products;A.01.000001;665;99.8;3.83;2.01;3.5;10.4
-United Kingdom;National Diet and Nutrition Survey - Years 1-3;Adults;grains and grain-based products;A.01.000001;1265;99.9;2.58;1.32;2.32;6.64
-United Kingdom;National Diet and Nutrition Survey - Years 1-3;Elderly;grains and grain-based products;A.01.000001;166;100;2.49;1.27;2.31;6.47
-United Kingdom;National Diet and Nutrition Survey - Years 1-3;Very elderly;grains and grain-based products;A.01.000001;139;100;2.53;1.17;2.43;5.78
-United Kingdom;Diet and Nutrition Survey of Infants and Young Children, 2011;Infants;meat and meat products;A.01.000727;860;62.8;1.87;1.62;1.47;8.3
-United Kingdom;Diet and Nutrition Survey of Infants and Young Children, 2011;Toddlers;meat and meat products;A.01.000727;1182;90;2.42;1.73;2.04;7.47
-United Kingdom;National Diet and Nutrition Survey;Adults;meat and meat products;A.01.000727;1697;98.4;1.4;0.73;1.31;3.48
-United Kingdom;National Diet and Nutrition Survey - Years 1-3;Toddlers;meat and meat products;A.01.000727;169;91.4;2.52;1.81;2.11;7.99
-United Kingdom;National Diet and Nutrition Survey - Years 1-3;Other children;meat and meat products;A.01.000727;630;96.8;2.25;1.4;1.94;6.66
-United Kingdom;National Diet and Nutrition Survey - Years 1-3;Adolescents;meat and meat products;A.01.000727;642;96.4;1.51;0.94;1.33;4.3
-United Kingdom;National Diet and Nutrition Survey - Years 1-3;Adults;meat and meat products;A.01.000727;1196;94.5;1.28;0.82;1.15;3.72
-United Kingdom;National Diet and Nutrition Survey - Years 1-3;Elderly;meat and meat products;A.01.000727;159;95.8;1.08;0.62;0.99;2.74
-United Kingdom;National Diet and Nutrition Survey - Years 1-3;Very elderly;meat and meat products;A.01.000727;127;91.4;1.06;0.56;1.03;2.52
-United Kingdom;Diet and Nutrition Survey of Infants and Young Children, 2011;Infants;fish and other seafood;A.01.000876;473;34.6;1.25;1.15;0.91;5.83
-United Kingdom;Diet and Nutrition Survey of Infants and Young Children, 2011;Toddlers;fish and other seafood;A.01.000876;676;51.4;1.43;1.04;1.23;5.1
-United Kingdom;National Diet and Nutrition Survey;Adults;fish and other seafood;A.01.000876;1280;74.2;0.49;0.39;0.39;1.96
-United Kingdom;National Diet and Nutrition Survey - Years 1-3;Toddlers;fish and other seafood;A.01.000876;109;58.9;1.52;1.47;1.07;5.25
-United Kingdom;National Diet and Nutrition Survey - Years 1-3;Other children;fish and other seafood;A.01.000876;376;57.8;1.15;0.77;0.95;3.61
-United Kingdom;National Diet and Nutrition Survey - Years 1-3;Adolescents;fish and other seafood;A.01.000876;282;42.3;0.63;0.42;0.54;2.25
-United Kingdom;National Diet and Nutrition Survey - Years 1-3;Adults;fish and other seafood;A.01.000876;709;56;0.64;0.44;0.53;2.16
-United Kingdom;National Diet and Nutrition Survey - Years 1-3;Elderly;fish and other seafood;A.01.000876;123;74.1;0.66;0.39;0.58;2.05
-United Kingdom;National Diet and Nutrition Survey - Years 1-3;Very elderly;fish and other seafood;A.01.000876;100;71.9;0.67;0.38;0.6;1.64
 United Kingdom;Diet and Nutrition Survey of Infants and Young Children, 2011;Infants;vegetables and vegetable products;A.01.000317;1043;76.2;5.34;4.52;4.24;20.61
-United Kingdom;Diet and Nutrition Survey of Infants and Young Children, 2011;Toddlers;vegetables and vegetable products;A.01.000317;1189;90.5;3.92;3.47;3.03;16.25
-United Kingdom;National Diet and Nutrition Survey;Adults;vegetables and vegetable products;A.01.000317;1720;99.8;1.77;1.16;1.55;5.38
-United Kingdom;National Diet and Nutrition Survey - Years 1-3;Toddlers;vegetables and vegetable products;A.01.000317;166;89.7;3.27;2.46;2.78;12.58
-United Kingdom;National Diet and Nutrition Survey - Years 1-3;Other children;vegetables and vegetable products;A.01.000317;586;90;2.88;2.4;2.28;13.31
-United Kingdom;National Diet and Nutrition Survey - Years 1-3;Adolescents;vegetables and vegetable products;A.01.000317;602;90.4;1.47;1.28;1.1;5.88
-United Kingdom;National Diet and Nutrition Survey - Years 1-3;Adults;vegetables and vegetable products;A.01.000317;1222;96.5;1.78;1.4;1.48;6.1
-United Kingdom;National Diet and Nutrition Survey - Years 1-3;Elderly;vegetables and vegetable products;A.01.000317;161;97;2.14;1.41;1.83;6.65
-United Kingdom;National Diet and Nutrition Survey - Years 1-3;Very elderly;vegetables and vegetable products;A.01.000317;133;95.7;1.76;1.05;1.65;4.36
-United Kingdom;Diet and Nutrition Survey of Infants and Young Children, 2011;Infants;fruit and fruit products;A.01.000544;1136;83;6.63;5.5;5.27;24.66
-United Kingdom;Diet and Nutrition Survey of Infants and Young Children, 2011;Toddlers;fruit and fruit products;A.01.000544;1240;94.4;7.93;5.75;6.77;25.32
-United Kingdom;National Diet and Nutrition Survey;Adults;fruit and fruit products;A.01.000544;1483;86;1.55;1.54;1.12;7.23
-United Kingdom;National Diet and Nutrition Survey - Years 1-3;Toddlers;fruit and fruit products;A.01.000544;174;94.1;8.03;5.38;6.88;26.09
-United Kingdom;National Diet and Nutrition Survey - Years 1-3;Other children;fruit and fruit products;A.01.000544;618;94.9;4.79;3.54;3.94;16.73
-United Kingdom;National Diet and Nutrition Survey - Years 1-3;Adolescents;fruit and fruit products;A.01.000544;503;75.5;1.63;1.51;1.25;7.03
-United Kingdom;National Diet and Nutrition Survey - Years 1-3;Adults;fruit and fruit products;A.01.000544;1027;81.1;1.52;1.49;1.14;6.31
-United Kingdom;National Diet and Nutrition Survey - Years 1-3;Elderly;fruit and fruit products;A.01.000544;147;88.6;1.95;1.71;1.55;7.16
-United Kingdom;National Diet and Nutrition Survey - Years 1-3;Very elderly;fruit and fruit products;A.01.000544;128;92.1;1.61;1.27;1.32;5.87
-United Kingdom;Diet and Nutrition Survey of Infants and Young Children, 2011;Infants;eggs and egg products;A.01.001252;236;17.2;1.25;1.24;0.98;6.26
-United Kingdom;Diet and Nutrition Survey of Infants and Young Children, 2011;Toddlers;eggs and egg products;A.01.001252;454;34.6;1.32;1.1;1.16;5
-United Kingdom;National Diet and Nutrition Survey;Adults;eggs and egg products;A.01.001252;1489;86.4;0.27;0.24;0.2;1.18
-United Kingdom;National Diet and Nutrition Survey - Years 1-3;Toddlers;eggs and egg products;A.01.001252;50;27;1.12;0.8;0.98;3.01
-United Kingdom;National Diet and Nutrition Survey - Years 1-3;Other children;eggs and egg products;A.01.001252;183;28.1;0.73;0.63;0.61;3.35
-United Kingdom;National Diet and Nutrition Survey - Years 1-3;Adolescents;eggs and egg products;A.01.001252;180;27;0.36;0.33;0.29;1.99
-United Kingdom;National Diet and Nutrition Survey - Years 1-3;Adults;eggs and egg products;A.01.001252;380;30;0.33;0.5;0.24;1.26
-United Kingdom;National Diet and Nutrition Survey - Years 1-3;Elderly;eggs and egg products;A.01.001252;83;50;0.28;0.21;0.22;1.17
-United Kingdom;National Diet and Nutrition Survey - Years 1-3;Very elderly;eggs and egg products;A.01.001252;58;41.7;0.29;0.19;0.24;0.9
+United Kingdom;Diet and Nutrition Survey of Infants and Young Children, 2011;Infants;nuts;A.01.000486;628;45.9;1.5;1.72;0.84;7.77
+United Kingdom;Diet and Nutrition Survey of Infants and Young Children, 2011;Infants;fruits and fruit products;A.01.000544;1136;83;6.63;5.5;5.27;24.66
+United Kingdom;Diet and Nutrition Survey of Infants and Young Children, 2011;Infants;meat and meat products;A.01.000727;860;62.8;1.87;1.62;1.47;8.3
+United Kingdom;Diet and Nutrition Survey of Infants and Young Children, 2011;Infants;fish and other seafood;A.01.000876;473;34.6;1.25;1.15;0.91;5.83
 United Kingdom;Diet and Nutrition Survey of Infants and Young Children, 2011;Infants;milk and dairy products;A.01.000948;1196;87.4;23.96;32.1;10.16;146.33
+United Kingdom;Diet and Nutrition Survey of Infants and Young Children, 2011;Infants;eggs and egg products;A.01.001252;236;17.2;1.25;1.24;0.98;6.26
+United Kingdom;Diet and Nutrition Survey of Infants and Young Children, 2011;Infants;sugar and confectionary;A.01.001267;398;29.1;0.39;0.4;0.27;1.76
+United Kingdom;Diet and Nutrition Survey of Infants and Young Children, 2011;Infants;non-alcoholic beverages;A.01.001470;293;21.4;2.52;3.51;1.26;18.38
+United Kingdom;Diet and Nutrition Survey of Infants and Young Children, 2011;Infants;alcoholic beverages;A.01.001534;14;1;0.42;0.56;0.23;2.13
+United Kingdom;Diet and Nutrition Survey of Infants and Young Children, 2011;Infants;snacks, desserts, and other foods;A.01.001877;455;33.2;2.06;2.38;1.2;10.29
+United Kingdom;Diet and Nutrition Survey of Infants and Young Children, 2011;Toddlers;grains and grain-based products;A.01.000001;1307;99.5;7.58;4.3;6.91;21.54
+United Kingdom;Diet and Nutrition Survey of Infants and Young Children, 2011;Toddlers;vegetables and vegetable products;A.01.000317;1189;90.5;3.92;3.47;3.03;16.25
+United Kingdom;Diet and Nutrition Survey of Infants and Young Children, 2011;Toddlers;nuts;A.01.000486;920;70;1.94;1.92;1.34;9.04
+United Kingdom;Diet and Nutrition Survey of Infants and Young Children, 2011;Toddlers;fruits and fruit products;A.01.000544;1240;94.4;7.93;5.75;6.77;25.32
+United Kingdom;Diet and Nutrition Survey of Infants and Young Children, 2011;Toddlers;meat and meat products;A.01.000727;1182;90;2.42;1.73;2.04;7.47
 United Kingdom;Diet and Nutrition Survey of Infants and Young Children, 2011;Toddlers;fish and other seafood;A.01.000876;676;51.4;1.43;1.04;1.23;5.1
 United Kingdom;Diet and Nutrition Survey of Infants and Young Children, 2011;Toddlers;milk and dairy products;A.01.000948;1299;98.9;34.54;21.82;34.68;87.8
-United Kingdom;National Diet and Nutrition Survey;Adults;milk and dairy products;A.01.000948;1720;99.8;3.61;2.49;3.17;11.76
-United Kingdom;National Diet and Nutrition Survey - Years 1-3;Toddlers;milk and dairy products;A.01.000948;185;100;28.33;17.5;25.88;92.3
-United Kingdom;National Diet and Nutrition Survey - Years 1-3;Other children;milk and dairy products;A.01.000948;648;99.5;13.34;10.08;10.61;45.04
-United Kingdom;National Diet and Nutrition Survey - Years 1-3;Adolescents;milk and dairy products;A.01.000948;654;98.2;3.89;3.71;2.67;16.87
-United Kingdom;National Diet and Nutrition Survey - Years 1-3;Adults;milk and dairy products;A.01.000948;1246;98.4;2.69;2.08;2.23;9.76
-United Kingdom;National Diet and Nutrition Survey - Years 1-3;Elderly;milk and dairy products;A.01.000948;163;98.2;3.31;2.1;3.02;10.1
-United Kingdom;National Diet and Nutrition Survey - Years 1-3;Very elderly;milk and dairy products;A.01.000948;139;100;3.89;2.44;3.57;12.63
-United Kingdom;Diet and Nutrition Survey of Infants and Young Children, 2011;Infants;sugar and confectionary;A.01.001267;398;29.1;0.39;0.4;0.27;1.76
+United Kingdom;Diet and Nutrition Survey of Infants and Young Children, 2011;Toddlers;eggs and egg products;A.01.001252;454;34.6;1.32;1.1;1.16;5
 United Kingdom;Diet and Nutrition Survey of Infants and Young Children, 2011;Toddlers;sugar and confectionary;A.01.001267;761;57.9;0.62;0.65;0.42;2.85
-United Kingdom;National Diet and Nutrition Survey;Adults;sugar and confectionary;A.01.001267;1522;88.3;0.37;0.44;0.23;2.06
-United Kingdom;National Diet and Nutrition Survey - Years 1-3;Toddlers;sugar and confectionary;A.01.001267;141;76.2;0.79;0.74;0.51;3.36
+United Kingdom;Diet and Nutrition Survey of Infants and Young Children, 2011;Toddlers;non-alcoholic beverages;A.01.001470;733;55.8;4.9;6.42;2.83;31.71
+United Kingdom;Diet and Nutrition Survey of Infants and Young Children, 2011;Toddlers;alcoholic beverages;A.01.001534;33;2.5;0.31;0.27;0.23;0.88
+United Kingdom;Diet and Nutrition Survey of Infants and Young Children, 2011;Toddlers;snacks, desserts, and other foods;A.01.001877;833;63.4;2.02;2.44;1.19;10.23
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Other children;grains and grain-based products;A.01.000001;651;100;7.41;3.03;6.93;16.57
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Other children;vegetables and vegetable products;A.01.000317;586;90;2.88;2.4;2.28;13.31
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Other children;nuts;A.01.000486;477;73.3;1.48;1.25;1.1;5.73
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Other children;fruits and fruit products;A.01.000544;618;94.9;4.79;3.54;3.94;16.73
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Other children;meat and meat products;A.01.000727;630;96.8;2.25;1.4;1.94;6.66
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Other children;fish and other seafood;A.01.000876;376;57.8;1.15;0.77;0.95;3.61
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Other children;milk and dairy products;A.01.000948;648;99.5;13.34;10.08;10.61;45.04
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Other children;eggs and egg products;A.01.001252;183;28.1;0.73;0.63;0.61;3.35
 United Kingdom;National Diet and Nutrition Survey - Years 1-3;Other children;sugar and confectionary;A.01.001267;558;85.7;0.86;0.8;0.66;4.56
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Other children;non-alcoholic beverages;A.01.001470;591;90.8;7.41;6.53;5.73;30.96
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Other children;alcoholic beverages;A.01.001534;23;3.5;0.22;0.31;0.1;1.48
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Other children;snacks, desserts, and other foods;A.01.001877;573;88;1.83;1.58;1.46;7.03
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Adolescents;grains and grain-based products;A.01.000001;665;99.8;3.83;2.01;3.5;10.4
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Adolescents;vegetables and vegetable products;A.01.000317;602;90.4;1.47;1.28;1.1;5.88
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Adolescents;nuts;A.01.000486;404;60.7;0.78;0.79;0.56;4.03
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Adolescents;fruits and fruit products;A.01.000544;503;75.5;1.63;1.51;1.25;7.03
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Adolescents;meat and meat products;A.01.000727;642;96.4;1.51;0.94;1.33;4.3
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Adolescents;fish and other seafood;A.01.000876;282;42.3;0.63;0.42;0.54;2.25
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Adolescents;milk and dairy products;A.01.000948;654;98.2;3.89;3.71;2.67;16.87
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Adolescents;eggs and egg products;A.01.001252;180;27;0.36;0.33;0.29;1.99
 United Kingdom;National Diet and Nutrition Survey - Years 1-3;Adolescents;sugar and confectionary;A.01.001267;580;87.1;0.52;0.5;0.38;2.26
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Adolescents;non-alcoholic beverages;A.01.001470;636;95.5;6.78;4.95;5.98;20.8
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Adolescents;alcoholic beverages;A.01.001534;80;12;2.18;3.53;0.57;16.09
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Adolescents;snacks, desserts, and other foods;A.01.001877;561;84.2;0.77;0.68;0.57;2.94
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Adults;grains and grain-based products;A.01.000001;1265;99.9;2.58;1.32;2.32;6.64
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Adults;vegetables and vegetable products;A.01.000317;1222;96.5;1.78;1.4;1.48;6.1
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Adults;nuts;A.01.000486;849;67.1;0.62;0.57;0.45;2.64
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Adults;fruits and fruit products;A.01.000544;1027;81.1;1.52;1.49;1.14;6.31
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Adults;meat and meat products;A.01.000727;1196;94.5;1.28;0.82;1.15;3.72
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Adults;fish and other seafood;A.01.000876;709;56;0.64;0.44;0.53;2.16
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Adults;milk and dairy products;A.01.000948;1246;98.4;2.69;2.08;2.23;9.76
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Adults;eggs and egg products;A.01.001252;380;30;0.33;0.5;0.24;1.26
 United Kingdom;National Diet and Nutrition Survey - Years 1-3;Adults;sugar and confectionary;A.01.001267;1051;83;0.32;0.33;0.22;1.49
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Adults;non-alcoholic beverages;A.01.001470;1207;95.3;8.54;5.95;7.48;29.4
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Adults;alcoholic beverages;A.01.001534;744;58.8;6.12;8.37;3.35;39.96
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Adults;snacks, desserts, and other foods;A.01.001877;796;62.9;0.37;0.34;0.26;1.61
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Elderly;grains and grain-based products;A.01.000001;166;100;2.49;1.27;2.31;6.47
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Elderly;vegetables and vegetable products;A.01.000317;161;97;2.14;1.41;1.83;6.65
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Elderly;nuts;A.01.000486;115;69.3;0.54;0.48;0.37;2.31
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Elderly;fruits and fruit products;A.01.000544;147;88.6;1.95;1.71;1.55;7.16
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Elderly;meat and meat products;A.01.000727;159;95.8;1.08;0.62;0.99;2.74
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Elderly;fish and other seafood;A.01.000876;123;74.1;0.66;0.39;0.58;2.05
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Elderly;milk and dairy products;A.01.000948;163;98.2;3.31;2.1;3.02;10.1
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Elderly;eggs and egg products;A.01.001252;83;50;0.28;0.21;0.22;1.17
 United Kingdom;National Diet and Nutrition Survey - Years 1-3;Elderly;sugar and confectionary;A.01.001267;116;69.9;0.28;0.25;0.2;1.02
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Elderly;non-alcoholic beverages;A.01.001470;156;94;8.97;6.13;7.97;23.93
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Elderly;alcoholic beverages;A.01.001534;84;50.6;4.53;5.25;2.77;29.8
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Elderly;snacks, desserts, and other foods;A.01.001877;89;53.6;0.38;0.31;0.32;1.69
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Very elderly;grains and grain-based products;A.01.000001;139;100;2.53;1.17;2.43;5.78
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Very elderly;vegetables and vegetable products;A.01.000317;133;95.7;1.76;1.05;1.65;4.36
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Very elderly;nuts;A.01.000486;97;69.8;0.44;0.37;0.3;1.87
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Very elderly;fruits and fruit products;A.01.000544;128;92.1;1.61;1.27;1.32;5.87
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Very elderly;meat and meat products;A.01.000727;127;91.4;1.06;0.56;1.03;2.52
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Very elderly;fish and other seafood;A.01.000876;100;71.9;0.67;0.38;0.6;1.64
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Very elderly;milk and dairy products;A.01.000948;139;100;3.89;2.44;3.57;12.63
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Very elderly;eggs and egg products;A.01.001252;58;41.7;0.29;0.19;0.24;0.9
 United Kingdom;National Diet and Nutrition Survey - Years 1-3;Very elderly;sugar and confectionary;A.01.001267;107;77;0.31;0.36;0.21;1.8
-United Kingdom;Diet and Nutrition Survey of Infants and Young Children, 2011;Infants;snacks, desserts, and other foods;A.01.001878;233;17;0.45;0.47;0.32;2.24
-United Kingdom;Diet and Nutrition Survey of Infants and Young Children, 2011;Infants;snacks, desserts, and other foods;A.01.001888;308;22.5;2.71;2.5;1.87;10.43
-United Kingdom;Diet and Nutrition Survey of Infants and Young Children, 2011;Infants;snacks, desserts, and other foods;A.01.001896;1;0.1;0.01;0;0.01;0.01
-United Kingdom;Diet and Nutrition Survey of Infants and Young Children, 2011;Toddlers;snacks, desserts, and other foods;A.01.001878;569;43.3;0.49;0.45;0.37;2
-United Kingdom;Diet and Nutrition Survey of Infants and Young Children, 2011;Toddlers;snacks, desserts, and other foods;A.01.001888;523;39.8;2.69;2.64;1.94;10.61
-United Kingdom;National Diet and Nutrition Survey;Adults;snacks, desserts, and other foods;A.01.001877;5;0.3;0.1;0.11;0.06;0.29
-United Kingdom;National Diet and Nutrition Survey;Adults;snacks, desserts, and other foods;A.01.001878;1007;58.4;0.18;0.17;0.13;0.9
-United Kingdom;National Diet and Nutrition Survey;Adults;snacks, desserts, and other foods;A.01.001888;750;43.5;0.4;0.33;0.31;1.65
-United Kingdom;National Diet and Nutrition Survey;Adults;snacks, desserts, and other foods;A.01.001896;614;35.6;0.05;0.1;0.03;0.31
-United Kingdom;National Diet and Nutrition Survey - Years 1-3;Toddlers;snacks, desserts, and other foods;A.01.001878;107;57.8;0.62;0.45;0.46;1.78
-United Kingdom;National Diet and Nutrition Survey - Years 1-3;Toddlers;snacks, desserts, and other foods;A.01.001888;86;46.5;2.34;1.89;1.74;9.59
-United Kingdom;National Diet and Nutrition Survey - Years 1-3;Other children;snacks, desserts, and other foods;A.01.001878;456;70;0.59;0.43;0.47;2.05
-United Kingdom;National Diet and Nutrition Survey - Years 1-3;Other children;snacks, desserts, and other foods;A.01.001888;417;64.1;1.88;1.54;1.47;6.96
-United Kingdom;National Diet and Nutrition Survey - Years 1-3;Other children;snacks, desserts, and other foods;A.01.001896;1;0.2;0.95;0;0.95;0.95
-United Kingdom;National Diet and Nutrition Survey - Years 1-3;Adolescents;snacks, desserts, and other foods;A.01.001878;485;72.8;0.38;0.31;0.31;1.52
-United Kingdom;National Diet and Nutrition Survey - Years 1-3;Adolescents;snacks, desserts, and other foods;A.01.001888;310;46.5;0.8;0.62;0.61;2.91
-United Kingdom;National Diet and Nutrition Survey - Years 1-3;Adults;snacks, desserts, and other foods;A.01.001878;629;49.7;0.21;0.17;0.17;0.87
-United Kingdom;National Diet and Nutrition Survey - Years 1-3;Adults;snacks, desserts, and other foods;A.01.001888;340;26.9;0.46;0.35;0.36;1.65
-United Kingdom;National Diet and Nutrition Survey - Years 1-3;Elderly;snacks, desserts, and other foods;A.01.001878;39;23.5;0.13;0.1;0.09;0.39
-United Kingdom;National Diet and Nutrition Survey - Years 1-3;Elderly;snacks, desserts, and other foods;A.01.001888;63;38;0.46;0.32;0.36;1.69
-United Kingdom;National Diet and Nutrition Survey - Years 1-3;Very elderly;snacks, desserts, and other foods;A.01.001878;28;20.1;0.11;0.07;0.1;0.31
-United Kingdom;National Diet and Nutrition Survey - Years 1-3;Very elderly;snacks, desserts, and other foods;A.01.001888;61;43.9;0.81;0.87;0.61;6.24
-United Kingdom;Diet and Nutrition Survey of Infants and Young Children, 2011;Infants;nuts;A.01.001752;87;6.4;0.08;0.12;0.04;0.62
-United Kingdom;Diet and Nutrition Survey of Infants and Young Children, 2011;Infants;nuts;A.01.001784;1;0.1;0.22;0;0.22;0.22
-United Kingdom;Diet and Nutrition Survey of Infants and Young Children, 2011;Toddlers;nuts;A.01.001752;115;8.8;0.14;0.18;0.08;0.66
-United Kingdom;Diet and Nutrition Survey of Infants and Young Children, 2011;Toddlers;nuts;A.01.001765;1;0.1;3.71;0;3.71;3.71
-United Kingdom;National Diet and Nutrition Survey;Adults;nuts;A.01.001748;2;0.1;0.09;0.03;0.09;0.11
-United Kingdom;National Diet and Nutrition Survey;Adults;nuts;A.01.001749;9;0.5;0.72;0.5;0.6;1.53
-United Kingdom;National Diet and Nutrition Survey;Adults;nuts;A.01.001752;419;24.3;0.05;0.21;0.02;0.31
-United Kingdom;National Diet and Nutrition Survey;Adults;nuts;A.01.001765;47;2.7;1.3;1.63;0.7;6.61
-United Kingdom;National Diet and Nutrition Survey;Adults;nuts;A.01.001771;3;0.2;0.31;0.27;0.28;0.59
-United Kingdom;National Diet and Nutrition Survey;Adults;nuts;A.01.001784;6;0.3;4.73;6.87;0.97;17.17
-United Kingdom;National Diet and Nutrition Survey - Years 1-3;Toddlers;nuts;A.01.001752;20;10.8;0.22;0.21;0.12;0.81
-United Kingdom;National Diet and Nutrition Survey - Years 1-3;Toddlers;nuts;A.01.001784;1;0.5;6.41;0;6.41;6.41
-United Kingdom;National Diet and Nutrition Survey - Years 1-3;Other children;nuts;A.01.001752;111;17.1;0.09;0.12;0.06;0.67
-United Kingdom;National Diet and Nutrition Survey - Years 1-3;Other children;nuts;A.01.001765;15;2.3;5.07;4.18;4.01;18.52
-United Kingdom;National Diet and Nutrition Survey - Years 1-3;Other children;nuts;A.01.001784;3;0.5;12.96;11.55;15.5;23.03
-United Kingdom;National Diet and Nutrition Survey - Years 1-3;Adolescents;nuts;A.01.001749;1;0.2;8.64;0;8.64;8.64
-United Kingdom;National Diet and Nutrition Survey - Years 1-3;Adolescents;nuts;A.01.001752;58;8.7;0.05;0.08;0.03;0.4
-United Kingdom;National Diet and Nutrition Survey - Years 1-3;Adolescents;nuts;A.01.001765;82;12.3;3.06;2.11;2.51;10.63
-United Kingdom;National Diet and Nutrition Survey - Years 1-3;Adolescents;nuts;A.01.001784;5;0.8;11.34;15;7.27;37.38
-United Kingdom;National Diet and Nutrition Survey - Years 1-3;Adults;nuts;A.01.001749;8;0.6;2.11;2.49;1.1;6.84
-United Kingdom;National Diet and Nutrition Survey - Years 1-3;Adults;nuts;A.01.001752;299;23.6;0.06;0.15;0.02;0.85
-United Kingdom;National Diet and Nutrition Survey - Years 1-3;Adults;nuts;A.01.001765;56;4.4;2.03;1.41;1.61;6.27
-United Kingdom;National Diet and Nutrition Survey - Years 1-3;Adults;nuts;A.01.001784;3;0.2;1.71;1.73;1.41;3.57
-United Kingdom;National Diet and Nutrition Survey - Years 1-3;Elderly;nuts;A.01.001752;68;41;0.05;0.08;0.03;0.52
-United Kingdom;National Diet and Nutrition Survey - Years 1-3;Elderly;nuts;A.01.001765;3;1.8;0.78;0.6;0.77;1.38
-United Kingdom;National Diet and Nutrition Survey - Years 1-3;Very elderly;nuts;A.01.001752;45;32.4;0.03;0.02;0.02;0.08
-United Kingdom;National Diet and Nutrition Survey - Years 1-3;Very elderly;nuts;A.01.001765;2;1.4;2.49;1.35;2.49;3.44
-United Kingdom;National Diet and Nutrition Survey - Years 1-3;Very elderly;nuts;A.01.001784;3;2.2;2.17;1.96;1.31;4.42
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Very elderly;non-alcoholic beverages;A.01.001470;133;95.7;9.42;5.68;8.94;24.43
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Very elderly;alcoholic beverages;A.01.001534;63;45.3;3.25;3.7;1.85;18.27
+United Kingdom;National Diet and Nutrition Survey - Years 1-3;Very elderly;snacks, desserts, and other foods;A.01.001877;74;53.2;0.71;0.85;0.49;6.24

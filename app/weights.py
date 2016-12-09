@@ -19,7 +19,7 @@ def getConDict (  aaa ) :
 	w_mean = np.true_divide(x, x.sum())
 	w_median = np.true_divide(y, y.sum())
 
-	conc_coll = db.consumption_clean # create collection name "consumption_clean"
+	# conc_coll = db.consumption_clean # create collection name "consumption_clean"
 
 	f_con = []
 	count_row=0
@@ -31,6 +31,7 @@ def getConDict (  aaa ) :
 		dic["MeanWeight"] = w_mean[count_row]
 		dic["Median"] = float(i["Median consumption in grams/ kg body weight per day"])
 		dic["MedianWeight"] = w_median[count_row]
+		dic["Percentage"] = float(i["Percentage of consumers"])/100
 		f_con.append(dic)
 		count_row+=1
 		# conc_coll.insert_one(dic)

@@ -19,7 +19,7 @@ def getConDict (  aaa ) :
 	w_mean = np.true_divide(x, x.sum())
 	w_median = np.true_divide(y, y.sum())
 
-	# conc_coll = db.consumption_clean # create collection name "consumption_clean"
+	conc_coll = db.consumption_clean # create collection name "consumption_clean"
 
 	f_con = []
 	count_row=0

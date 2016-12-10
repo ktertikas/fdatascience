@@ -3,6 +3,7 @@ from pymongo import MongoClient
 import numpy as np
 from median_nutrients import getMedianNutr
 
+
 dic_nutr = getMedianNutr()
 print(dic_nutr["vegetables and vegetable products"])
 
@@ -30,3 +31,4 @@ for i in infants:
 print(sample_arr)
 print(count)
 print(names)
+

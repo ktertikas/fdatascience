@@ -32,7 +32,7 @@ nutr_keys = ['VitaminC', 'Fat', 'VitaminK', 'Nitrogen', 'Cholesterol', 'EnergyJ'
 nutrc_foodcode = db.nutrients_clean.distinct("FoodCode")
 final=[]
 for i in nutrc_foodcode:
-	file = open("nutrients_text_output/"+i+".txt", "wb")
+	# file = open("nutrients_text_output/"+i+".txt", "wb")
 	dic={}
 	for j in nutr_keys:
 		nutr_key_value = db.nutrients_clean.find( {j:{'$ne':None}, "FoodCode":i}, {'_id':0, j:1} )
@@ -60,7 +60,7 @@ for i in nutrc_foodcode:
 			dic["FoodCode"] = i
 			dic[j] = np.median(temp)
 	final.append(dic)
-	file.close()
+	# file.close()
 # print(final)
 # find clean consumption for infants and take median weights for every food group
 consum = db.consumption_clean.find({"PopClass":"Infants"})

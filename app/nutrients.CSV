@@ -115,7 +115,7 @@ milk and dairy products;Coffeemate, whitener powder;BAR;3;0.33;2.1;34.5;57.3;534
 milk and dairy products;Milk, condensed, whole, sweetened;BAR;29.1;1.16;7.4;8;55.5;310;1310;55.5;0;43.2;12.3;29;0;0.19;0.36;0.07;0.7;4
 milk and dairy products;Milk, evaporated, light;BAR;75.9;1.22;7.8;4.1;10.3;107;449;10.3;0;0;10.3;16.9;3.1;0.11;;0.04;0.2;1
 milk and dairy products;Milk, evaporated, whole;BAR;69.1;1.32;8.4;9.4;12.7;166;694;12.7;0;0;12.7;34;2.7;0.19;0.5;0.07;0.1;1
-milk and dairy products;Milk, flavoured, pasteurised, chocolate;BAR;82.8;0.56;3.6;1.5;11.7;72;305;11.0;0;2.8;5.5;7;0;0.03;;0.03;0.1;0
+milk and dairy products;Milk, flavoured, pasteurised, chocolate;BAR;82.8;0.56;3.6;1.5;11.7;72;305;11;0;2.8;5.5;7;0;0.03;;0.03;0.1;0
 milk and dairy products;Milk, flavoured, pasteurised, strawberry, banana;BAR;83.9;0.57;3.6;1.5;9.6;64;270;8.9;0;3.9;4.9;7;0;0.03;;0.03;0.1;0
 milk and dairy products;Milk, skimmed, dried, fortified;BAR;3;5.7;36.1;0.6;52.9;348;1482;52.9;0;0;52.9;12;1.5;0.01;;0.6;2.6;13
 milk and dairy products;Milkshake, thick, takeaway;BAR;73.2;0.58;3.7;1.8;15.3;88;374;11.1;0.3;1.4;4.5;10.9;0;0.1;;0.03;0.5;1
@@ -429,8 +429,8 @@ nuts;Almonds, toasted;GA;2.6;4.14;21.2;56.7;7;621;2570;4.3;0;4.3;0;0;0;24.36;;0.
 nuts;Betel nuts;GA;11.5;0.98;5.2;10.2;56.7;339;1430;;0;;0;0;0;;;;0;0
 nuts;Chestnuts, dried;GA;9;0.69;3.7;5.1;69;319;1356;13.2;0;13.2;0;0;0;2.26;;0.64;0;0
 nuts;Coconut milk;GA;92.2;0.06;0.3;0.3;4.9;22;95;4.9;0.3;4.6;0;0;0;0;;0.03;0;2
-nuts;Coconut milk, reduced fat, retail;GA;89.5;0.13;0.7;7.7;2.0;79;328;1.1;;;0;0;0;;;;0;
-nuts;Coconut milk, retail;GA;78.3;0.21;1.1;16.9;3.3;169;697;2.0;;;0;0;0;;;;0;
+nuts;Coconut milk, reduced fat, retail;GA;89.5;0.13;0.7;7.7;2;79;328;1.1;;;0;0;0;;;;0;
+nuts;Coconut milk, retail;GA;78.3;0.21;1.1;16.9;3.3;169;697;2;;;0;0;0;;;;0;
 nuts;Coconut, desiccated;GA;2.3;1.05;5.6;62;6.4;604;2492;6.4;0;5.6;0;0;0;1.26;;0.09;0;0
 nuts;Coconut, flesh only, fresh;GA;45;0.61;3.2;36;3.7;351;1446;3.7;0;3.7;0;0;0;0.73;;0.05;0;3
 nuts;Marzipan, white and yellow, retail;GA;8.1;1.02;5.3;12.7;67.6;389;1642;67.6;2.7;62.2;0;0;0;6.18;;0.04;0;0
@@ -454,7 +454,7 @@ fish and other seafood;Salmon, farmed, flesh only, steamed;J;58.9;3.78;23.6;18.5
 fish and other seafood;Bass, sea, flesh only, baked;JA;69;3.71;23.2;6.8;0;154;646;0;0;0;0;49;0;0.33;;0.14;2.9;0
 fish and other seafood;Catfish, flesh only, steamed;JA;73.6;3.43;21.4;3.7;0;119;501;0;0;0;0;61;0.7;2.8;;0.46;3;0
 fish and other seafood;Cod, flesh only, baked;JA;76.9;3.82;23.9;0.5;0;100;425;0;0;0;0;43.3;0;0.95;;0.12;1.9;0
-fish and other seafood;Cod, in batter, baked;JA;56;1.97;12.3;11.8;19.7;229;961;2.0;;;;36.5;0;2.38;;0.2;1.7;0
+fish and other seafood;Cod, in batter, baked;JA;56;1.97;12.3;11.8;19.7;229;961;2;;;;36.5;0;2.38;;0.2;1.7;0
 fish and other seafood;Cod, in batter, fried, takeaway;JA;57.3;2.69;16.8;14.7;10.7;240;1001;1;0.1;0.3;0;60.4;0;1.48;;0.24;2.1;0
 fish and other seafood;Cod, in breadcrumbs, baked;JA;55.5;2.19;13.7;8.3;19.8;204;858;0.9;0.2;0.1;0;35.6;0;1.84;;0.19;1;0
 fish and other seafood;Fishcakes, white fish, coated in breadcrumbs, baked;JA;56.9;1.49;9.3;9.4;22.6;206;867;1.8;0.2;0.1;0;30;0;1.98;;0.09;1.4;0
@@ -743,30 +743,6 @@ alcoholic beverages;Liqueurs, cream;QI;48.7;0.47;3;13;21.8;305;1272;21.8;0;21;0.
 alcoholic beverages;Liqueurs, high strength;QI;28;0;0;0;24.4;314;1313;24.4;2.6;17.1;0;0;0;0;;0;0;0
 alcoholic beverages;Liqueurs, low-medium strength;QI;47.4;0;0;0;32.8;262;1099;32.8;6.3;20.4;0;0;0;0;;0;0;0
 alcoholic beverages;Spirits, 40% volume;QK;68.3;0;0;0;0;222;919;0;0;0;0;0;0;0;0;0;0;0
-snacks, desserts, and other foods;Bounty bar and own brand equivalents;SEA;8.6;0.59;3.7;26.3;61;480;2012;50.4;3.2;41.7;2.4;4;;;;;;
-snacks, desserts, and other foods;Caramel bars and sweets, chocolate covered;SEA;4.8;0.66;4.2;23.6;70.2;493;2068;56;4.7;39.6;7.5;12.6;;;;;;
-snacks, desserts, and other foods;Chocolate, dark, with cr?me or mint fondant centres;SEA;5.4;0.58;3.7;16.3;71.9;431;1816;62.9;4;56.5;0;3.3;;;;;;
-snacks, desserts, and other foods;Chocolate, milk;SEA;1.6;1.15;7.3;31.1;56;519;2171;56;0;46.8;9.2;22.1;;;;;;
-snacks, desserts, and other foods;Chocolate, plain;SEA;0.6;0.8;5;28;63.5;510;2137;62.6;0;62.4;0.2;6;;;;;;
-snacks, desserts, and other foods;Chocolate, white;SEA;0.6;1.28;8;30.9;58.3;529;2212;58.3;0;47.6;10.7;;;;;;;
-snacks, desserts, and other foods;Fruit gums/jellies;SEC;14;1.04;6.5;0;79.5;324;1383;58.7;6.3;46.4;0;0;;;;;;
-snacks, desserts, and other foods;Fruit pastilles;SEC;9.1;0.45;2.8;0;84.2;327;1395;59.3;6.5;45.4;0;0;;;;;;
-snacks, desserts, and other foods;Fudge, homemade;SEC;5.8;0.54;3.4;13.1;80.8;435;1836;80.8;0;75.7;5;37.3;;;;;;
-snacks, desserts, and other foods;Halva, carrot, homemade;SEC;31.9;0.76;4.8;16.6;44;354;1478;43.3;2.6;33.8;4.9;6.2;;;;;;
-snacks, desserts, and other foods;Halva, semolina, homemade;SEC;33.9;0.4;2.2;16.7;49.1;342;1436;37.6;0;37.6;0;0;;;;;;
-snacks, desserts, and other foods;Honey;SC;17.5;0.06;0.4;0;76.4;288;1229;76.4;34.6;0;0;0;;;;;;
-snacks, desserts, and other foods;Honey and comb;SC;20.2;0.09;0.6;4.6;74.4;281;1201;74.4;34.2;0;0;0;;;;;;
-snacks, desserts, and other foods;Jam, fruit with edible seeds;SC;29.8;0.1;0.6;0;69;261;1114;69;27.4;18.7;0;0;;;;;;
-snacks, desserts, and other foods;Jam, stone fruit;SC;29.6;0.06;0.4;0;69.3;261;1116;69.3;27.5;18.8;0;0;;;;;;
-snacks, desserts, and other foods;Lemon curd;SC;35.9;0.09;0.6;4.9;58.4;266;1126;52.5;21.4;15.6;0;21;;;;;;
-snacks, desserts, and other foods;Lemon curd, homemade;S;29.1;0.67;4.2;16;50.7;350;1473;50.7;0.1;50.3;0.1;145.5;;;;;;
-snacks, desserts, and other foods;Maltesers and similar products;SEA;1.8;1.19;7.6;23.3;63;476;1998;55.5;2.3;36.9;14.2;11.7;;;;;;
-snacks, desserts, and other foods;Marmalade;SC;28;0.01;0.1;0;69.5;261;1114;69.5;27.6;18.8;0;0;;;;;;
-snacks, desserts, and other foods;Mars bar and own brand equivalents;SEA;7.1;0.65;4.1;15.3;66.6;404;1703;63.3;7.8;38.7;8.7;9.7;;;;;;
-snacks, desserts, and other foods;Marshmallows;SEC;17.4;0.62;3.9;0;83.1;327;1396;64.5;12.1;41.5;0;0;;;;;;
-snacks, desserts, and other foods;Milky Way and own brand equivalents;SEA;5.8;0.6;3.8;15.7;76.6;444;1872;69.7;6.5;47.1;8.3;9.4;;;;;;
-snacks, desserts, and other foods;Mincemeat, vegetarian, homemade;S;29.8;0.27;1.7;9.5;43.8;306;1285;42.5;12.5;15.8;0;0;;;;;;
-snacks, desserts, and other foods;Nougat, homemade;SEC;4.5;0.91;5.2;10.2;80;413;1747;79.6;3.2;72.6;0;68;;;;;;
 snacks, desserts, and other foods;Peanut brittle, homemade;SEC;1.7;1.38;8.6;19;73.8;483;2031;71.8;3.8;64.2;0;11;;;;;;
 snacks, desserts, and other foods;Peppermints;SEC;0.2;0.08;0.5;0.7;102.7;393;1678;102.7;1;101.7;0;0;;;;;;
 snacks, desserts, and other foods;Popcorn, candied;SN;4.2;1.1;6.9;23.8;60.7;469;1969;15;0;15;0;0;;;;;;
@@ -775,18 +751,41 @@ snacks, desserts, and other foods;Pork scratchings;SN;2.1;7.66;47.9;46;0.2;606;2
 snacks, desserts, and other foods;Potato crisps, low fat;SN;1.1;1.06;6.6;21.5;63.5;458;1924;1.5;0.2;0.8;0.5;0;;;;;;
 snacks, desserts, and other foods;Potato rings;SN;2;0.57;3.6;22.4;70.5;480;2018;0.3;0;0.3;0;0;;;;;;
 snacks, desserts, and other foods;Potato snacks, pringle-type, fried in vegetable oil;SNA;1.9;0.69;4.3;31.8;57.4;519;2168;1.5;0.3;1.1;0;0;;;;;;
-snacks, desserts, and other foods;Smartie-type sweets;SEA;1.5;0.86;5.4;17.5;73.9;456;1922;70.8;0.3;65.6;4.8;17;;;;;;
-snacks, desserts, and other foods;Sweets, boiled;SEC;16.6;0;0;0;87.1;327;1394;86.7;8.5;67.5;0;0;;;;;;
-snacks, desserts, and other foods;Sweets, chew sweets;SEC;3.8;0.15;0.9;6;85.1;377;1599;54.5;6.3;40.5;0;0;;;;;;
-snacks, desserts, and other foods;Sweets, sherbert;SEC;0.2;0.1;0.6;0;93.9;355;1513;93.9;0.2;93.7;0;0;;;;;;
-snacks, desserts, and other foods;Syrup, corn, dark;SC;22.8;0;0;0;76.6;282;1181;28.1;14.9;2.2;0;0;;;;;;
-snacks, desserts, and other foods;Syrup, golden;SC;20;0.05;0.3;0;79;298;1269;79;23.1;32.8;0;0;;;;;;
-snacks, desserts, and other foods;Toffees, mixed;SEC;4;0.34;2.1;15.9;62.9;387;1630;39.1;5.9;29.9;0;17;;;;;;
-snacks, desserts, and other foods;Topic/Snickers and own brand equivalents;SEA;5.4;1.39;7.5;28.2;52.1;479;2005;46.1;4.8;31;5.8;4.5;;;;;;
 snacks, desserts, and other foods;Tortilla chips fried in sunflower oil;SN;1.3;1.16;7.2;27.4;60.8;504;2110;2.5;0.2;1.1;1;0;;;;;;
 snacks, desserts, and other foods;Treacle, black;SC;28.5;0.19;1.2;0;67.2;257;1096;66.8;17.4;32.7;0;0;;;;;;
-snacks, desserts, and other foods;Truffles, mocha, homemade;SEA;2.6;0.99;6.2;24.9;63.8;488;2049;62.9;0;60.1;2.8;13;;;;;;
-snacks, desserts, and other foods;Truffles, rum, homemade;SEA;3.3;0.96;6;32.9;54.2;529;2209;53.4;0;53.1;0.3;139.6;;;;;;
 snacks, desserts, and other foods;Turkish delight, with nuts, homemade;SEC;14.1;0.75;4.1;2.6;82;348;1478;81.8;0;81.8;0;0;;;;;;
 snacks, desserts, and other foods;Turkish delight, without nuts;SEC;16.1;0.1;0.6;0;77.9;295;1257;68.6;;;0;0;;;;;;
 snacks, desserts, and other foods;Twiglets;SN;3.2;2.16;12.3;11.8;63.3;393;1659;0.6;0;0.6;0;0;;;;;;
+sugar and confectionary;Bounty bar and own brand equivalents;SEA;8.6;0.59;3.7;26.3;61;480;2012;50.4;3.2;41.7;2.4;4;;;;;;
+sugar and confectionary;Caramel bars and sweets, chocolate covered;SEA;4.8;0.66;4.2;23.6;70.2;493;2068;56;4.7;39.6;7.5;12.6;;;;;;
+sugar and confectionary;Chocolate, dark, with cr?me or mint fondant centres;SEA;5.4;0.58;3.7;16.3;71.9;431;1816;62.9;4;56.5;0;3.3;;;;;;
+sugar and confectionary;Chocolate, milk;SEA;1.6;1.15;7.3;31.1;56;519;2171;56;0;46.8;9.2;22.1;;;;;;
+sugar and confectionary;Chocolate, plain;SEA;0.6;0.8;5;28;63.5;510;2137;62.6;0;62.4;0.2;6;;;;;;
+sugar and confectionary;Chocolate, white;SEA;0.6;1.28;8;30.9;58.3;529;2212;58.3;0;47.6;10.7;;;;;;;
+sugar and confectionary;Fruit gums/jellies;SEC;14;1.04;6.5;0;79.5;324;1383;58.7;6.3;46.4;0;0;;;;;;
+sugar and confectionary;Fruit pastilles;SEC;9.1;0.45;2.8;0;84.2;327;1395;59.3;6.5;45.4;0;0;;;;;;
+sugar and confectionary;Fudge, homemade;SEC;5.8;0.54;3.4;13.1;80.8;435;1836;80.8;0;75.7;5;37.3;;;;;;
+sugar and confectionary;Halva, carrot, homemade;SEC;31.9;0.76;4.8;16.6;44;354;1478;43.3;2.6;33.8;4.9;6.2;;;;;;
+sugar and confectionary;Halva, semolina, homemade;SEC;33.9;0.4;2.2;16.7;49.1;342;1436;37.6;0;37.6;0;0;;;;;;
+sugar and confectionary;Honey;SC;17.5;0.06;0.4;0;76.4;288;1229;76.4;34.6;0;0;0;;;;;;
+sugar and confectionary;Honey and comb;SC;20.2;0.09;0.6;4.6;74.4;281;1201;74.4;34.2;0;0;0;;;;;;
+sugar and confectionary;Jam, fruit with edible seeds;SC;29.8;0.1;0.6;0;69;261;1114;69;27.4;18.7;0;0;;;;;;
+sugar and confectionary;Jam, stone fruit;SC;29.6;0.06;0.4;0;69.3;261;1116;69.3;27.5;18.8;0;0;;;;;;
+sugar and confectionary;Lemon curd;SC;35.9;0.09;0.6;4.9;58.4;266;1126;52.5;21.4;15.6;0;21;;;;;;
+sugar and confectionary;Lemon curd, homemade;S;29.1;0.67;4.2;16;50.7;350;1473;50.7;0.1;50.3;0.1;145.5;;;;;;
+sugar and confectionary;Maltesers and similar products;SEA;1.8;1.19;7.6;23.3;63;476;1998;55.5;2.3;36.9;14.2;11.7;;;;;;
+sugar and confectionary;Marmalade;SC;28;0.01;0.1;0;69.5;261;1114;69.5;27.6;18.8;0;0;;;;;;
+sugar and confectionary;Mars bar and own brand equivalents;SEA;7.1;0.65;4.1;15.3;66.6;404;1703;63.3;7.8;38.7;8.7;9.7;;;;;;
+sugar and confectionary;Marshmallows;SEC;17.4;0.62;3.9;0;83.1;327;1396;64.5;12.1;41.5;0;0;;;;;;
+sugar and confectionary;Milky Way and own brand equivalents;SEA;5.8;0.6;3.8;15.7;76.6;444;1872;69.7;6.5;47.1;8.3;9.4;;;;;;
+sugar and confectionary;Nougat, homemade;SEC;4.5;0.91;5.2;10.2;80;413;1747;79.6;3.2;72.6;0;68;;;;;;
+sugar and confectionary;Smartie-type sweets;SEA;1.5;0.86;5.4;17.5;73.9;456;1922;70.8;0.3;65.6;4.8;17;;;;;;
+sugar and confectionary;Sweets, boiled;SEC;16.6;0;0;0;87.1;327;1394;86.7;8.5;67.5;0;0;;;;;;
+sugar and confectionary;Sweets, chew sweets;SEC;3.8;0.15;0.9;6;85.1;377;1599;54.5;6.3;40.5;0;0;;;;;;
+sugar and confectionary;Sweets, sherbert;SEC;0.2;0.1;0.6;0;93.9;355;1513;93.9;0.2;93.7;0;0;;;;;;
+sugar and confectionary;Syrup, corn, dark;SC;22.8;0;0;0;76.6;282;1181;28.1;14.9;2.2;0;0;;;;;;
+sugar and confectionary;Syrup, golden;SC;20;0.05;0.3;0;79;298;1269;79;23.1;32.8;0;0;;;;;;
+sugar and confectionary;Toffees, mixed;SEC;4;0.34;2.1;15.9;62.9;387;1630;39.1;5.9;29.9;0;17;;;;;;
+sugar and confectionary;Topic/Snickers and own brand equivalents;SEA;5.4;1.39;7.5;28.2;52.1;479;2005;46.1;4.8;31;5.8;4.5;;;;;;
+sugar and confectionary;Truffles, mocha, homemade;SEA;2.6;0.99;6.2;24.9;63.8;488;2049;62.9;0;60.1;2.8;13;;;;;;
+sugar and confectionary;Truffles, rum, homemade;SEA;3.3;0.96;6;32.9;54.2;529;2209;53.4;0;53.1;0.3;139.6;;;;;;

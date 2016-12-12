@@ -40,7 +40,7 @@ def getMedianNutr():
 				dic[i][j] = 0.0
 			else:
 				dic[i][j] = median
-	print(dic)
+	# print(dic)
 	return (dic)
 
 # List of dictionaries

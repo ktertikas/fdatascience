@@ -20,13 +20,13 @@ def montecarlo(popClass, kg1):
 	# print(count)
 	count = np.zeros(number)
 	for i in infants:
-		for j in range(1, sample):
+		for j in range(0, sample):
 				x = random.random()
 				if x <= i["Percentage"]:
-					sample_arr[j-1,k] = i["Median"]	
+					sample_arr[j,k] = i["Median"]	
 					count[k] = count[k] + 1
 				else:
-					sample_arr[j-1,k] = 0.0
+					sample_arr[j,k] = 0.0
 		names.append(i["FoodName"])
 		k = k + 1
 	# print(sample_arr)
@@ -49,7 +49,7 @@ def montecarlo(popClass, kg1):
 	final_arr = np.true_divide(final_arr, kg1)
 
 	print(final_arr)
-# print(final_arr[:,5])
+	# print(final_arr[:,len(nutr_keys)-1])
 # print(dic_nutr)
 	# for j in range(1, sample):
 	# 		if x <= i["Percentage"]:

@@ -47,7 +47,6 @@ def montecarlo(popClass, kg1):
 		count_sam = count_sam + 1
 	# print(final_arr)
 	final_arr = np.true_divide(final_arr, kg1)
-
 	# print(final_arr)
 	return final_arr
 # print(final_arr[:,5])

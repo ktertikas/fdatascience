@@ -7,14 +7,13 @@ from pymongo import MongoClient
 
 client = MongoClient('localhost',27017)
 db = client.fdatascience # create db name "fdatascience"
-collection = db.app # create collection name "app"
+collection = db.visualisation # create collection name "app"
 
 # collection.insert_one({ # insert data
 # 	'name' : 'Top'
 # 	})
 
-print(client.database_names())
-print(db.collection_names())
+print(collection.find())
 
 # top = db.app.find_one()
 

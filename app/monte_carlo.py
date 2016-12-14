@@ -47,9 +47,10 @@ def montecarlo(popClass, kg1):
 		count_sam = count_sam + 1
 	# print(final_arr)
 	final_arr = np.true_divide(final_arr, kg1)
-
-	print(final_arr)
-	# print(final_arr[:,len(nutr_keys)-1])
+	# print(final_arr)
+	return final_arr
+# print(final_arr[:,5])
+>>>>>>> 7565b8aa6c5837e087157df7cdbd5b1c2f0803e6
 # print(dic_nutr)
 	# for j in range(1, sample):
 	# 		if x <= i["Percentage"]:

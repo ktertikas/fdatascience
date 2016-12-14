@@ -1,9 +1,3 @@
-<!--   
-  <link href="css/nv.d3.css" rel="stylesheet" type="text/css">
-  <script src="http://d3js.org/d3.v3.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.2/d3.min.js" charset="utf-8"></script>
-  <script src="js/nv.d3.min.js"></script>
- -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -34,8 +28,8 @@
 <body>
 <div style="position:absolute; top: 0; left: 0;">
     <button onclick="chart.switchYAxisOrder(!chart.switchYAxisOrder()); chart.update();">toggle axis</button>
-    <button onclick="chart.focusEnable(!chart.focusEnable()); chart.update();">toggle focus</button>
-    <span style="color: #C60;">&lt;-- turn focus on or off!</span>
+    <!-- <button onclick="chart.focusEnable(!chart.focusEnable()); chart.update();">toggle focus</button> -->
+    <!-- <span style="color: #C60;">&lt; turn focus on or off!</span> -->
 </div>
 <div id="chart1" class='with-3d-shadow with-transitions'>
     <svg> </svg>
@@ -61,20 +55,25 @@
         chart = nv.models.linePlusBarChart()
             .margin({top: 50, right: 80, bottom: 30, left: 80})
             .legendRightAxisHint(' [Using Right Axis]')
-            .color(d3.scale.category10().range());
+            .color(d3.scale.category10().range())
+            .focusEnable(false);
         chart.xAxis.tickFormat(function(d) {
-            return d3.time.format('%x')(new Date(d))
+            return d
+            // return d3.time.format('%x')(new Date(d))
         }).showMaxMin(false);
         chart.y2Axis.tickFormat(function(d) { return '$' + d3.format(',f')(d) });
         chart.bars.forceY([0]).padData(false);
         chart.x2Axis.tickFormat(function(d) {
-            return d3.time.format('%x')(new Date(d))
+            return d
+            // return d3.time.format('%x')(new Date(d))
         }).showMaxMin(false);
         d3.select('#chart1 svg')
             .datum(testdata)
             .transition().duration(500).call(chart);
         nv.utils.windowResize(chart.update);
         chart.dispatch.on('stateChange', function(e) { nv.log('New State:', JSON.stringify(e)); });
+        // chart.focusEnable(false)
+        // chart.update()
         return chart;
     });
 </script>

@@ -55,7 +55,7 @@ class VisSocketHandler(tornado.websocket.WebSocketHandler):
         # self.write_message(final)
 
     def on_message(self, message):
-        response = collection.find({"PopClass": message}, {"PopClass":1,"_id":0,"VitaminC":1,"Cholesterol":1,"Fat":1,"EnergyCal":1, "Protein":1, "Carbohydrate":1})
+        response = collection.find({"PopClass": message}, {"_id":0,"VitaminC":1,"Cholesterol":1,"Fat":1,"EnergyCal":1, "Protein":1, "Carbohydrate":1})
         results = []
         for item in response:
             results.append(item)
@@ -77,7 +77,7 @@ settings = dict(
 	static_path=os.path.join(os.path.dirname(__file__), "static")
         )
 
-application = tornado.web.Application(handlers, **settings)
+application = tornado.web.Application(handlers, debug=True, **settings )
 
 application.listen(8888, '0.0.0.0')
 

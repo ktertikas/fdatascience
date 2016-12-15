@@ -42,21 +42,25 @@ class VisSocketHandler(tornado.websocket.WebSocketHandler):
     def open(self):
         print("WebSocket opened")
         websocket_clients.add(self)
-        response = collection.find()
+        # response = collection.find()
         # print(response)
+        # results = []
+        # for item in response:
+        #     results.append(item)
+        # # print(results)
+        # # print(type(results))
+        # final = JSONEncoder().encode(results)
+        # # final = json.dumps(results)
+        # # print final
+        # self.write_message(final)
+
+    def on_message(self, message):
+        response = collection.find({"PopClass": message})
         results = []
         for item in response:
             results.append(item)
-        # print(results)
-        # print(type(results))
         final = JSONEncoder().encode(results)
-        # final = json.dumps(results)
-        # print final
         self.write_message(final)
-        self.close()
-
-    def on_message(self, message):
-        pass
         # self.write_message(u"You said: " + message)
 
     def on_close(self):

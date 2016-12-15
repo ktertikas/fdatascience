@@ -40,19 +40,20 @@ class VisSocketHandler(tornado.websocket.WebSocketHandler):
     def check_origin(self, origin):
     	return True
     def open(self):
+        print("WebSocket opened")
         websocket_clients.add(self)
         response = collection.find()
-        print(response)
+        # print(response)
         results = []
         for item in response:
             results.append(item)
         # print(results)
-        print(type(results))
+        # print(type(results))
         final = JSONEncoder().encode(results)
         # final = json.dumps(results)
         # print final
         self.write_message(final)
-        print("WebSocket opened")
+        self.close()
 
     def on_message(self, message):
         pass

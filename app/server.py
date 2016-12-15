@@ -77,7 +77,7 @@ settings = dict(
 	static_path=os.path.join(os.path.dirname(__file__), "static")
         )
 
-application = tornado.web.Application(handlers, debug=True, **settings )
+application = tornado.web.Application(handlers, debug=True, **settings)
 
 application.listen(8888, '0.0.0.0')
 

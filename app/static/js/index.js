@@ -12,35 +12,55 @@ ws.onmessage = function(event) {
     console.log('You\'re here');
     // console.log(data_json);
 
+    var guidelines = 
+    { 
+        "Infants"       : { "VitaminC" : 45, "Fat" : 30.5, "Cholesterol" : null, "Carbohydrate" : 77.5, "Protein" : 10.05, "EnergyCal" : 593},
+        "Toddlers"      : { "VitaminC" : 0, "Fat" : 0, "Cholesterol" : 0, "Carbohydrate" : 0, "Protein" : 0, "EnergyCal" : 0},
+        "Other children": { "VitaminC" : 0, "Fat" : 0, "Cholesterol" : 0, "Carbohydrate" : 0, "Protein" : 0, "EnergyCal" : 0},
+        "Adolescents"   : { "VitaminC" : 0, "Fat" : 0, "Cholesterol" : 0, "Carbohydrate" : 0, "Protein" : 0, "EnergyCal" : 0},
+        "Adults"        : { "VitaminC" : 0, "Fat" : 0, "Cholesterol" : 0, "Carbohydrate" : 0, "Protein" : 0, "EnergyCal" : 0},
+        "Elderly"       : { "VitaminC" : 0, "Fat" : 0, "Cholesterol" : 0, "Carbohydrate" : 0, "Protein" : 0, "EnergyCal" : 0},
+        "Very elderly"  : { "VitaminC" : 0, "Fat" : 0, "Cholesterol" : 0, "Carbohydrate" : 0, "Protein" : 0, "EnergyCal" : 0}
+    };
+    // console.log(guidelines.Infants.VitaminC);
+    var popclass = document.getElementById("PopClass").options[document.getElementById("PopClass").selectedIndex].text;
     var json_obj = JSON.parse(data_json);
-
     // size=0;
+    vitaminc_arr  = [];
+    fat_arr       = [];
+    choles_arr    = [];
+    carboh_arr    = [];
+    protein_arr   = [];
     energycal_arr = [];
     for (var key in json_obj)
     {
        if (json_obj.hasOwnProperty(key))
        {
+          vitaminc_arr.push(json_obj[key].VitaminC);
+          fat_arr.push(json_obj[key].Fat);
+          choles_arr.push(json_obj[key].Cholesterol);
+          carboh_arr.push(json_obj[key].Carbohydrate);
+          protein_arr.push(json_obj[key].Protein);
           energycal_arr.push(json_obj[key].EnergyCal);
           // size++;
        }
     }
     // console.log(size)
-    // console.log(energycal_arr);
 
     final_bins = findBins(energycal_arr);
     // console.log(final_bins);
 
-    var jsonBarData = {};
-    jsonBarData["key"] = "Bin of "+document.getElementById("PopClass").options[document.getElementById("PopClass").selectedIndex].text;
-    jsonBarData["bar"] = true
-    jsonBarData["values"] = final_bins;
+    var jsonBarData        = {};
+    jsonBarData["key"]     = "Bins of "+popclass;
+    jsonBarData["bar"]     = true
+    jsonBarData["values"]  = final_bins;
     // console.log(jsonBarData);
-    var jsonLineData = {};
-    jsonLineData["key"] = "Line of "+document.getElementById("PopClass").options[document.getElementById("PopClass").selectedIndex].text;
+    var jsonLineData       = {};
+    jsonLineData["key"]    = "Line of "+popclass;
     jsonLineData["values"] = final_bins;
     // console.log(jsonBarData);
 
-    buildBarChart(jsonBarData, jsonLineData);
+    buildBarChart(popclass, jsonBarData, jsonLineData);
 
 };
 
@@ -50,13 +70,13 @@ function return_pop(){
 }
 
 function findBins(data_arr){
-    // data_arr = [1704.648,1766.856,1522.408,1471.296,1694.776,1630.12,1823.36,1964.528,1964.528,1578.888,1827.792,1878.712,1933.52,1635.512,1735.848,1964.528,1361.136,1487.064,1854.368,1512.536,1772.248,1782.288,1788.016,1866.976,1571.816,1256.68,1823.36,1543.376,1806.632,2036.608];
-    console.log("data_arr.length: "+data_arr.length);
+    // data_arr  = [1704.648,1766.856,1522.408,1471.296,1694.776,1630.12,1823.36,1964.528,1964.528,1578.888,1827.792,1878.712,1933.52,1635.512,1735.848,1964.528,1361.136,1487.064,1854.368,1512.536,1772.248,1782.288,1788.016,1866.976,1571.816,1256.68,1823.36,1543.376,1806.632,2036.608];
     min_data_arr = Math.min.apply(null,data_arr);
+    max_data_arr = Math.max.apply(null,data_arr);
+    numbins      = 20;
+    console.log("data_arr.length: "+data_arr.length);
     console.log("min: "+min_data_arr);
-    max_data_arr = Math.max.apply(null,data_arr)
     console.log("max: "+max_data_arr);
-    numbins = 20;
 
     var bins = d3.layout.histogram()    // create layout object
     .bins(numbins)   // to use 20 bins
@@ -73,7 +93,7 @@ function findBins(data_arr){
 
     var final_bins = new Array(bins.length);
     for (var i = 0; i < bins.length; i++) {
-        final_bins[i] = new Array(2);
+        final_bins[i]    = new Array(2);
         final_bins[i][0] = bins[i].x
         final_bins[i][1] = bins[i].y
     }
@@ -81,9 +101,11 @@ function findBins(data_arr){
     return final_bins;
 }
 
-function buildBarChart(jsonBarData, jsonLineData){
+function buildBarChart(popclass, jsonBarData, jsonLineData){
     d3.selectAll("svg > *").remove();
 
+    // var xaxis = "Nums of "+popclass;
+    var yaxis = "Number of "+popclass;
     var testdata = [jsonBarData, jsonLineData
         // {
         //     "key" : "Quantity" ,
@@ -107,6 +129,9 @@ function buildBarChart(jsonBarData, jsonLineData){
             .color(d3.scale.category10().range())
             .focusEnable(false)
             .interpolate('basis');
+        chart.xAxis.axisLabel('X-Axis').axisLabelDistance(-5);
+        chart.y1Axis.axisLabel(yaxis);
+        chart.y2Axis.axisLabel(yaxis);
         // chart.xAxis.tickFormat(function(d) {
         //     return d
         //     // return d3.time.format('%x')(new Date(d))

@@ -61,17 +61,25 @@
         <div class="row">
             <div class="col-xs-12">
                 <select id="PopClass" onchange="return_pop()">
-                    <!-- <option value="">Select one...</option> -->
-                    <option value="Infants" selected="selected">Infants</option>
+                    <option value="Infants">Infants</option>
                     <option value="Toddlers">Toddlers</option>
                     <option value="Other children">Other children</option>
                     <option value="Adolescents">Adolescents</option>
-                    <option value="Adults">Adults</option>
+                    <option value="Adults" selected="selected">Adults</option>
                     <option value="Elderly">Elderly</option>
                     <option value="Very elderly">Very elderly</option>
                 </select>
             </div>
-            
+            <div class="col-xs-12">
+                <select id="Nutr" onchange="return_nutr()">
+                    <option value="VitaminC">Vitamin C (mg)</option>
+                    <option value="Fat">Fat (g)</option>
+                    <option value="Cholesterol">Cholesterol (g)</option>
+                    <option value="Carbohydrate">Carbohydrate (g)</option>
+                    <option value="Protein" selected="selected">Protein (g)</option>
+                    <option value="EnergyCal" selected="selected">Energy (Cal)</option>
+                </select>
+            </div>
         </div>
     </div>
     <div id="chart1" class="col-xs-12 with-3d-shadow with-transitions">

@@ -5,7 +5,7 @@ from monte_carlo import montecarlo
 client = MongoClient('localhost',27017)
 db = client.fdatascience 
 population = db.consumption_clean.distinct("PopClass")
-kilos = [20, 10, 4.6, 1.67 , 1.25, 1.43, 1.43]
+kilos = [13.89, 10, 4.6, 1.67 , 1.25, 1.43, 1.43]
 nutr_keys = ['VitaminC', 'Fat', 'VitaminK', 'Nitrogen', 'Cholesterol', 'EnergyJ', 'VitaminD', 'Glucose', 'Protein', 'Sugars', 'Carbohydrate', 'VitaminB12', 'VitaminE', 'Lactose', 'Sucrose', 'VitaminB6', 'Water', 'EnergyCal']
 visual = db.visualisation # create collection name "visualisation"
 k = 0

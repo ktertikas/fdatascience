@@ -1,6 +1,19 @@
 // console.log('It goes until here');
 var ws = new WebSocket("ws://localhost:8888/vis");
 
+var guidelines = 
+{ 
+    "Infants"       : { "VitaminC" : 45, "Fat" : 30.5, "Cholesterol" : null, "Carbohydrate" : 77.5, "Protein" : 10.05, "EnergyCal" : 593},
+    "Toddlers"      : { "VitaminC" : 0, "Fat" : 0, "Cholesterol" : 0, "Carbohydrate" : 0, "Protein" : 0, "EnergyCal" : 0},
+    "Other children": { "VitaminC" : 0, "Fat" : 0, "Cholesterol" : 0, "Carbohydrate" : 0, "Protein" : 0, "EnergyCal" : 0},
+    "Adolescents"   : { "VitaminC" : 0, "Fat" : 0, "Cholesterol" : 0, "Carbohydrate" : 0, "Protein" : 0, "EnergyCal" : 0},
+    "Adults"        : { "VitaminC" : 0, "Fat" : 0, "Cholesterol" : 0, "Carbohydrate" : 0, "Protein" : 0, "EnergyCal" : 0},
+    "Elderly"       : { "VitaminC" : 0, "Fat" : 0, "Cholesterol" : 0, "Carbohydrate" : 0, "Protein" : 0, "EnergyCal" : 0},
+    "Very elderly"  : { "VitaminC" : 0, "Fat" : 0, "Cholesterol" : 0, "Carbohydrate" : 0, "Protein" : 0, "EnergyCal" : 0}
+};
+
+var nutr_arr = [];
+
 ws.onopen = function(){
     // ws.send("Sent message ok");
     var e = document.getElementById("PopClass");
@@ -10,64 +23,51 @@ ws.onopen = function(){
 ws.onmessage = function(event) {
     data_json = event.data;
     console.log('You\'re here');
-    // console.log(data_json);
-
-    var guidelines = 
-    { 
-        "Infants"       : { "VitaminC" : 45, "Fat" : 30.5, "Cholesterol" : null, "Carbohydrate" : 77.5, "Protein" : 10.05, "EnergyCal" : 593},
-        "Toddlers"      : { "VitaminC" : 0, "Fat" : 0, "Cholesterol" : 0, "Carbohydrate" : 0, "Protein" : 0, "EnergyCal" : 0},
-        "Other children": { "VitaminC" : 0, "Fat" : 0, "Cholesterol" : 0, "Carbohydrate" : 0, "Protein" : 0, "EnergyCal" : 0},
-        "Adolescents"   : { "VitaminC" : 0, "Fat" : 0, "Cholesterol" : 0, "Carbohydrate" : 0, "Protein" : 0, "EnergyCal" : 0},
-        "Adults"        : { "VitaminC" : 0, "Fat" : 0, "Cholesterol" : 0, "Carbohydrate" : 0, "Protein" : 0, "EnergyCal" : 0},
-        "Elderly"       : { "VitaminC" : 0, "Fat" : 0, "Cholesterol" : 0, "Carbohydrate" : 0, "Protein" : 0, "EnergyCal" : 0},
-        "Very elderly"  : { "VitaminC" : 0, "Fat" : 0, "Cholesterol" : 0, "Carbohydrate" : 0, "Protein" : 0, "EnergyCal" : 0}
-    };
-    // console.log(guidelines.Infants.VitaminC);
-    var popclass = document.getElementById("PopClass").options[document.getElementById("PopClass").selectedIndex].text;
-    var json_obj = JSON.parse(data_json);
-    // size=0;
-    vitaminc_arr  = [];
-    fat_arr       = [];
-    choles_arr    = [];
-    carboh_arr    = [];
-    protein_arr   = [];
-    energycal_arr = [];
-    for (var key in json_obj)
-    {
-       if (json_obj.hasOwnProperty(key))
-       {
-          vitaminc_arr.push(json_obj[key].VitaminC);
-          fat_arr.push(json_obj[key].Fat);
-          choles_arr.push(json_obj[key].Cholesterol);
-          carboh_arr.push(json_obj[key].Carbohydrate);
-          protein_arr.push(json_obj[key].Protein);
-          energycal_arr.push(json_obj[key].EnergyCal);
-          // size++;
-       }
-    }
-    // console.log(size)
-
-    final_bins = findBins(energycal_arr);
-    // console.log(final_bins);
-
-    var jsonBarData = {};
-    jsonBarData["key"] = "Bins of "+document.getElementById("PopClass").options[document.getElementById("PopClass").selectedIndex].text;
-    jsonBarData["bar"] = true
-    jsonBarData["values"] = final_bins;
-
-    // console.log(jsonBarData);
-    var jsonLineData       = {};
-    jsonLineData["key"]    = "Line of "+popclass;
-    jsonLineData["values"] = final_bins;
-    // console.log(jsonBarData);
-
-    buildBarChart(popclass, jsonBarData, jsonLineData);
-
+    return_nutr();
 };
 
 function return_pop(){
 	var d = document.getElementById("PopClass");
-    ws.send(d.options[d.selectedIndex].text);
+    ws.send(d.options[d.selectedIndex].value);
+}
+
+function return_nutr() {
+    var nutr = document.getElementById("Nutr");
+    var nutr_value = nutr.options[nutr.selectedIndex].value;
+    var nutr_text = nutr.options[nutr.selectedIndex].text;
+    var popclass = document.getElementById("PopClass").options[document.getElementById("PopClass").selectedIndex].value;
+
+    getArray(nutr_value);
+
+    final_bins = findBins(nutr_arr);
+    // console.log(final_bins);
+    
+    var jsonBarData        = {};
+    jsonBarData["key"]     = "Bins of "+document.getElementById("PopClass").options[document.getElementById("PopClass").selectedIndex].text;
+    jsonBarData["bar"]     = true
+    jsonBarData["values"]  = final_bins;
+    var jsonLineData       = {};
+    jsonLineData["key"]    = "Line of "+popclass;
+    jsonLineData["values"] = final_bins;
+
+    console.log(nutr_value)
+
+    buildBarChart(popclass, nutr_text, jsonBarData, jsonLineData);
+}
+
+function getArray(nutr) {
+    // console.log(data_json);
+    nutr_arr = [];
+    var json_obj = JSON.parse(data_json);
+    for (var key in json_obj)
+    {
+       if (json_obj.hasOwnProperty(key))
+       {
+          nutr_arr.push(json_obj[key][nutr]);
+       }
+    }
+    console.log(nutr)
+    console.log(nutr_arr)
 }
 
 function findBins(data_arr){
@@ -102,7 +102,7 @@ function findBins(data_arr){
     return final_bins;
 }
 
-function buildBarChart(popclass, jsonBarData, jsonLineData){
+function buildBarChart(popclass, nutr_text, jsonBarData, jsonLineData, minX, maxX){
     d3.selectAll("svg > *").remove();
 
     // var xaxis = "Nums of "+popclass;
@@ -130,7 +130,7 @@ function buildBarChart(popclass, jsonBarData, jsonLineData){
             .color(d3.scale.category10().range())
             .focusEnable(false)
             .interpolate('basis');
-        chart.xAxis.axisLabel('X-Axis').axisLabelDistance(-5);
+        chart.xAxis.axisLabel(nutr_text).axisLabelDistance(-10);
         chart.y1Axis.axisLabel(yaxis);
         chart.y2Axis.axisLabel(yaxis);
         // chart.xAxis.tickFormat(function(d) {
@@ -138,7 +138,10 @@ function buildBarChart(popclass, jsonBarData, jsonLineData){
         //     // return d3.time.format('%x')(new Date(d))
         // }).showMaxMin(false);
         // chart.y2Axis.tickFormat(function(d) { return '$' + d3.format(',f')(d) });
+
+        // chart.bars.forceX([minX, maxX]).padData(false);
         chart.bars.forceY([0]).padData(false);
+
         // chart.x2Axis.tickFormat(function(d) {
         //     return d
         //     // return d3.time.format('%x')(new Date(d))

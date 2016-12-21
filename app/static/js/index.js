@@ -31,7 +31,7 @@ ws.onmessage = function(event) {
     // console.log(final_bins);
 
     var jsonBarData = {};
-    jsonBarData["key"] = "Bin of "+document.getElementById("PopClass").options[document.getElementById("PopClass").selectedIndex].text;
+    jsonBarData["key"] = "Bins of "+document.getElementById("PopClass").options[document.getElementById("PopClass").selectedIndex].text;
     jsonBarData["bar"] = true
     jsonBarData["values"] = final_bins;
     // console.log(jsonBarData);

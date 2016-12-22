@@ -142,16 +142,7 @@ function buildBarChart(popclass, nutr_text, jsonBarData, jsonLineData, minX, max
         chart.bars.forceX([minX, maxX]);
         chart.lines.forceY([0]).padData(false);
         chart.bars.forceY([0]).padData(false);
-
-        // chart.xAxis.tickFormat(function(d) {
-        //     return d
-        //     // return d3.time.format('%x')(new Date(d))
-        // }).showMaxMin(false);
-        // chart.y2Axis.tickFormat(function(d) { return '$' + d3.format(',f')(d) });
-        // chart.x2Axis.tickFormat(function(d) {
-        //     return d
-        //     // return d3.time.format('%x')(new Date(d))
-        // }).showMaxMin(false);
+        
         d3.select('#chart1 svg')
             .datum(testdata)
             .transition().duration(500).call(chart);

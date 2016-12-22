@@ -39,8 +39,10 @@ function return_nutr() {
 
     getArray(nutr_value);
 
+    minX = Math.min.apply(null,nutr_arr);
+    maxX = Math.max.apply(null,nutr_arr);
     final_bins = findBins(nutr_arr);
-    // console.log(final_bins);
+    console.log(final_bins);
     
     var jsonBarData        = {};
     jsonBarData["key"]     = "Bins of "+document.getElementById("PopClass").options[document.getElementById("PopClass").selectedIndex].text;
@@ -52,7 +54,7 @@ function return_nutr() {
 
     console.log(nutr_value)
 
-    buildBarChart(popclass, nutr_text, jsonBarData, jsonLineData);
+    buildBarChart(popclass, nutr_text, jsonBarData, jsonLineData, minX, maxX);
 }
 
 function getArray(nutr) {
@@ -133,15 +135,19 @@ function buildBarChart(popclass, nutr_text, jsonBarData, jsonLineData, minX, max
         chart.xAxis.axisLabel(nutr_text).axisLabelDistance(-10);
         chart.y1Axis.axisLabel(yaxis);
         chart.y2Axis.axisLabel(yaxis);
+        
+        // maxXX = Math.floor((maxX+100)/100)*100;
+        // console.log("maxXX: "+maxXX);
+        chart.lines.forceX([minX, maxX]);
+        chart.bars.forceX([minX, maxX]);
+        chart.lines.forceY([0]).padData(false);
+        chart.bars.forceY([0]).padData(false);
+
         // chart.xAxis.tickFormat(function(d) {
         //     return d
         //     // return d3.time.format('%x')(new Date(d))
         // }).showMaxMin(false);
         // chart.y2Axis.tickFormat(function(d) { return '$' + d3.format(',f')(d) });
-
-        // chart.bars.forceX([minX, maxX]).padData(false);
-        chart.bars.forceY([0]).padData(false);
-
         // chart.x2Axis.tickFormat(function(d) {
         //     return d
         //     // return d3.time.format('%x')(new Date(d))

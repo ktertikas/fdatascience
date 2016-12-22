@@ -138,10 +138,10 @@ function buildBarChart(popclass, nutr_text, jsonBarData, jsonLineData, minX, max
         
         // maxXX = Math.floor((maxX+100)/100)*100;
         // console.log("maxXX: "+maxXX);
-        chart.lines.forceX([minX, maxX]);
-        chart.bars.forceX([minX, maxX]);
-        chart.lines.forceY([0]).padData(false);
-        chart.bars.forceY([0]).padData(false);
+        // chart.lines.forceX([minX, maxX]).padData(false);
+        // chart.bars.forceX([minX, maxX]).padData(false);
+        // chart.lines.forceY([0]).padData(false);
+        // chart.bars.forceY([0]).padData(false);
         
         d3.select('#chart1 svg')
             .datum(testdata)

@@ -107,6 +107,21 @@ function findBins(data_arr){
 function buildBarChart(popclass, nutr_text, jsonBarData, jsonLineData, minX, maxX){
     d3.selectAll("svg > *").remove();
 
+    var svg = d3.select("#chart1 svg");
+    var width = parseInt(svg.style("width"), 10);
+    // var margin_top = parseInt(svg.style("margin-top"), 10);
+    var x = (width / 2);
+    // var y = 0 - (margin_top / 2);
+    var y = 12;
+    d3.select('#chart1 svg')
+        .append("text")
+        .attr("x", x)          
+        .attr("y", y)
+        .attr("text-anchor", "middle")  
+        .style("font-size", "16px") 
+        .style("text-decoration", "underline")
+        .text("Sample Charts");
+
     // var xaxis = "Nums of "+popclass;
     var yaxis = "Number of "+popclass;
     var testdata = [jsonBarData, jsonLineData

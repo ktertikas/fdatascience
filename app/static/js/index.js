@@ -3,13 +3,13 @@ var ws = new WebSocket("ws://localhost:8888/vis");
 
 var guidelines = 
 { 
-    "Infants"       : { "VitaminC" : 45, "Fat" : 30.5, "Cholesterol" : null, "Carbohydrate" : 77.5, "Protein" : 10.05, "EnergyCal" : 593},
-    "Toddlers"      : { "VitaminC" : 0, "Fat" : 0, "Cholesterol" : 0, "Carbohydrate" : 0, "Protein" : 0, "EnergyCal" : 0},
-    "Other children": { "VitaminC" : 0, "Fat" : 0, "Cholesterol" : 0, "Carbohydrate" : 0, "Protein" : 0, "EnergyCal" : 0},
-    "Adolescents"   : { "VitaminC" : 0, "Fat" : 0, "Cholesterol" : 0, "Carbohydrate" : 0, "Protein" : 0, "EnergyCal" : 0},
-    "Adults"        : { "VitaminC" : 0, "Fat" : 0, "Cholesterol" : 0, "Carbohydrate" : 0, "Protein" : 0, "EnergyCal" : 0},
-    "Elderly"       : { "VitaminC" : 0, "Fat" : 0, "Cholesterol" : 0, "Carbohydrate" : 0, "Protein" : 0, "EnergyCal" : 0},
-    "Very elderly"  : { "VitaminC" : 0, "Fat" : 0, "Cholesterol" : 0, "Carbohydrate" : 0, "Protein" : 0, "EnergyCal" : 0}
+    "Infants"       : { "VitaminC" : 30, "Fat" : 30.5, "Cholesterol" : null, "Carbohydrate" : 77.5, "Protein" : 10.05, "EnergyCal" : 593},
+    "Toddlers"      : { "VitaminC" : 30, "Fat" : null, "Cholesterol" : null, "Carbohydrate" : 139.5, "Protein" : 14.5, "EnergyCal" : 1046},
+    "Other children": { "VitaminC" : 30, "Fat" : 62.25, "Cholesterol" : null, "Carbohydrate" : 212.75, "Protein" : 24, "EnergyCal" : 1595},
+    "Adolescents"   : { "VitaminC" : 37.5, "Fat" : 87.5, "Cholesterol" : null, "Carbohydrate" : 300, "Protein" : 45.875, "EnergyCal" : 2250},
+    "Adults"        : { "VitaminC" : 40, "Fat" : 87.5, "Cholesterol" : null, "Carbohydrate" : 300, "Protein" : 50.25, "EnergyCal" : 2250},
+    "Elderly"       : { "VitaminC" : 40, "Fat" : 82.5, "Cholesterol" : null, "Carbohydrate" : 283.5, "Protein" : 49.9, "EnergyCal" : 2127},
+    "Very elderly"  : { "VitaminC" : 40, "Fat" : 80.5, "Cholesterol" : null, "Carbohydrate" : 275.5, "Protein" : 49.9, "EnergyCal" : 2067}
 };
 
 var nutr_arr = [];

@@ -52,9 +52,9 @@ function return_nutr() {
     jsonLineData["key"]    = "Line of "+popclass;
     jsonLineData["values"] = final_bins;
 
-    console.log(nutr_value)
+    // console.log(nutr_value);
 
-    buildBarChart(popclass, nutr_text, jsonBarData, jsonLineData, minX, maxX);
+    buildBarChart(popclass, nutr_text, nutr_value, jsonBarData, jsonLineData, minX, maxX);
 }
 
 function getArray(nutr) {
@@ -104,15 +104,18 @@ function findBins(data_arr){
     return final_bins;
 }
 
-function buildBarChart(popclass, nutr_text, jsonBarData, jsonLineData, minX, maxX){
+function buildBarChart(popclass, nutr_text, nutr_value, jsonBarData, jsonLineData, minX, maxX){
     d3.selectAll("svg > *").remove();
 
+    //CREATE TITLE
     var svg = d3.select("#chart1 svg");
+    var height = parseInt(svg.style("height"), 10);
     var width = parseInt(svg.style("width"), 10);
     // var margin_top = parseInt(svg.style("margin-top"), 10);
     var x = (width / 2);
     // var y = 0 - (margin_top / 2);
     var y = 12;
+    var ctext = "Chart of "+popclass;
     d3.select('#chart1 svg')
         .append("text")
         .attr("x", x)          
@@ -120,7 +123,7 @@ function buildBarChart(popclass, nutr_text, jsonBarData, jsonLineData, minX, max
         .attr("text-anchor", "middle")  
         .style("font-size", "16px") 
         .style("text-decoration", "underline")
-        .text("Sample Charts");
+        .text(ctext);
 
     // var xaxis = "Nums of "+popclass;
     var yaxis = "Number of "+popclass;
@@ -166,6 +169,32 @@ function buildBarChart(popclass, nutr_text, jsonBarData, jsonLineData, minX, max
             chart.update();
         });
         // chart.dispatch.on('stateChange', function(e) { nv.log('New State:', JSON.stringify(e)); });
+
+        //CREATE GUIDELINES LINE
+        var gd_value = guidelines[popclass][nutr_value];
+        if(guidelines[popclass][nutr_value] !== null) {
+            console.log("gd_value: "+gd_value);
+            var margin = {top: 50, right: 80, bottom: 30, left: 80}; //margin from chart declaration
+            var xScale = chart.xAxis.scale(); //calculate the yScale
+            var xValue = gd_value;
+            svg.append("line")
+                .style("stroke", "#00FF00")
+                // .style("stroke-width", "2.5px")
+                .attr("x1", xScale(xValue) + margin.left)
+                .attr("y1", margin.top)
+                .attr("x2", xScale(xValue) + margin.left)
+                .attr("y2", height - margin.bottom);
+            
+            var gltext = "XXX"
+            d3.select("#chart1 svg")
+                .append("text")
+                .style("stroke", "#00FF00")
+                .attr("x", xScale(xValue) + margin.left)
+                .attr("y", margin.top-10)
+                .attr("text-anchor", "middle")
+                .text(gltext);
+        }
+
         return chart;
     });
 }

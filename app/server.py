@@ -5,6 +5,7 @@ import json
 from pymongo import MongoClient
 import os
 from bson import ObjectId
+import numpy as np
 # from bson.objectid import ObjectId
 
 class JSONEncoder(json.JSONEncoder):
@@ -34,6 +35,12 @@ class MainHandler(tornado.web.RequestHandler):
         print("GET / request from", self.request.remote_ip)
         # self.write("aada")
         self.render("index.html")
+
+class SummaryHandler(tornado.web.RequestHandler):
+    def get(self):
+        print("GET / request from", self.request.remote_ip)
+        # self.write("aada")
+        self.render("summary.html")
 
 
 class VisSocketHandler(tornado.websocket.WebSocketHandler):
@@ -67,9 +74,54 @@ class VisSocketHandler(tornado.websocket.WebSocketHandler):
         websocket_clients.remove(self)
         print("WebSocket closed")
 
+class Vis2SocketHandler(tornado.websocket.WebSocketHandler):
+    def check_origin(self, origin):
+        return True
+    def open(self):
+        print("WebSocket 2 opened")
+        websocket_clients.add(self)
+        # response = collection.find()
+        # print(response)
+        # results = []
+        # for item in response:
+        #     results.append(item)
+        # # print(results)
+        # # print(type(results))
+        # final = JSONEncoder().encode(results)
+        # # final = json.dumps(results)
+        # # print final
+        # self.write_message(final)
+
+    def on_message(self, message):
+        print message
+        results = []
+        popclass_keys = ['Infants', 'Toddlers', 'Other children', 'Adolescents', 'Adults', 'Elderly', 'Very elderly']
+        for popclass in popclass_keys:
+            response = collection.find({"PopClass": popclass}, {"_id":0,"PopClass":1,message:1})
+            popclass_value = ""
+            nutr_value = []
+            for item in response:
+                nutr_value.append(item[message])
+                popclass_value = item["PopClass"]
+            np_nutr_value = np.array(nutr_value)
+            nutr_mean = np.mean(np_nutr_value)
+            dictionary = {}
+            dictionary["label"] = popclass_value
+            dictionary["value"] = nutr_mean
+            results.append(dictionary)
+        final = JSONEncoder().encode(results)
+        self.write_message(final)
+        # self.write_message(u"You said: " + message)
+
+    def on_close(self):
+        websocket_clients.remove(self)
+        print("WebSocket 2 closed")
+
 handlers = [
             (r"/", MainHandler),
-            (r"/vis", VisSocketHandler)
+            (r"/summary", SummaryHandler),
+            (r"/vis", VisSocketHandler),
+            (r"/vis2", Vis2SocketHandler)
             ]
 
 settings = dict(

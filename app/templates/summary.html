@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link href="{{ static_url("css/nv.d3.css") }}" rel="stylesheet" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.2/d3.min.js" charset="utf-8"></script>
+    <script src="{{ static_url("js/nv.d3.js") }}"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="{{ static_url("css/style.css") }}" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">Group 5 App</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#gdp"><span class="glyphicon glyphicon-home"></span> GDP</a></li>
+                    <li class="active"><a href="#"><span class="glyphicon glyphicon-info-sign"></span> Summary</a></li>
+                    <li><a href="#"><i class="fa fa-envelope-o"></i> Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container one">
+        <div class="row">
+            <div class="col-xs-12">
+                <select id="Nutr" onchange="return_nutr()">
+                    <option value="VitaminC">Vitamin C (mg)</option>
+                    <option value="Fat">Fat (g)</option>
+                    <option value="Cholesterol">Cholesterol (mg)</option>
+                    <option value="Carbohydrate">Carbohydrate (g)</option>
+                    <option value="Protein" selected="selected">Protein (g)</option>
+                    <option value="EnergyCal" selected="selected">Energy (Cal)</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div id="chart1" class="col-xs-12 with-3d-shadow with-transitions">
+        <svg> </svg>
+    </div>
+    <!-- <div style="position:absolute; top: 0; left: 0;"> -->
+        <!-- <button onclick="chart.switchYAxisOrder(!chart.switchYAxisOrder()); chart.update();">toggle axis</button> -->
+        <!-- <button onclick="chart.focusEnable(!chart.focusEnable()); chart.update();">toggle focus</button> -->
+        <!-- <span style="color: #C60;">&lt; turn focus on or off!</span> -->
+    <!-- </div> -->
+<script src="{{ static_url("js/index1.js") }}"></script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>

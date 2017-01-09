@@ -1,19 +1,18 @@
 from pymongo import MongoClient
 import numpy as np
 
-
-def getNutr (  aaa ) :
+# Function to clean all data in the collection "nutrients"
+# and create the new collection "nutrients_clean"
+def getNutr ( foodcode ) :
 	client = MongoClient('localhost',27017)
 	db = client.fdatascience # create db name "fdatascience"
-	s_con = db.nutrients.find(aaa)
+	s_con = db.nutrients.find(foodcode)
 	con = []
 	for i in s_con:
 		con.append(i)
 
 	nuc_coll = db.nutrients_clean # create collection name "nutrients_clean"
-
 	f_con = []
-	# count_row=0
 	for i in con:
 		dic = {}
 		dic["FoodCode"] = i["Food Code"]
@@ -56,12 +55,6 @@ def getNutr (  aaa ) :
 		if i["Vitamin C (mg)"]: 
 			dic["VitaminC"] = float(i["Vitamin C (mg)"])
 		f_con.append(dic)
-
 		print(dic)
-		# nuc_coll.insert_one(dic)
-
-		# if(count_row == 2):
-		# 	break;
-		# count_row+=1
-
+		nuc_coll.insert_one(dic)
 	# print(f_con)

@@ -9,5 +9,5 @@ db = client.fdatascience # create db name "fdatascience"
 
 s_popclass = db.consumption.distinct("Population Class")
 for i in s_popclass:
-	# "getConDict" function to clean the data for the second time
+	# "getConDict" function to clean the data from the collection "consumption" for the second time
 	getConDict(json.loads('{"Population Class": "'+ str(i) + '"}'))

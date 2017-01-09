@@ -2,6 +2,7 @@ from pymongo import MongoClient
 import csv
 import json
 
+# Import data from CSV file to mongodb
 nu_file = open('nutrients.CSV')
 con_file = open('consumption.CSV')
 bev_file = open('beverages_consumption.CSV')

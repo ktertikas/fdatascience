@@ -73,7 +73,7 @@ class Vis2SocketHandler(tornado.websocket.WebSocketHandler):
 
     # Get data from mongo database and send via the websocket to the client when we recieve a message from the client 
     def on_message(self, message):
-        print message
+        print (message)
         results = []
         popclass_keys = ['Infants', 'Toddlers', 'Other children', 'Adolescents', 'Adults', 'Elderly', 'Very elderly']
         for popclass in popclass_keys:

@@ -106,24 +106,9 @@ function findBins(data_arr){
 
 function buildBarChart(popclass, nutr_text, nutr_value, jsonBarData, jsonLineData, minX, maxX){
     d3.selectAll("svg > *").remove();
-
-    //CREATE TITLE
     var svg = d3.select("#chart1 svg");
     var height = parseInt(svg.style("height"), 10);
     var width = parseInt(svg.style("width"), 10);
-    // var margin_top = parseInt(svg.style("margin-top"), 10);
-    var x = (width / 2);
-    // var y = 0 - (margin_top / 2);
-    var y = 12;
-    var ctext = "Chart of "+popclass;
-    d3.select('#chart1 svg')
-        .append("text")
-        .attr("x", x)          
-        .attr("y", y)
-        .attr("text-anchor", "middle")  
-        .style("font-size", "16px") 
-        .style("text-decoration", "underline")
-        .text(ctext);
 
     // var xaxis = "Nums of "+popclass;
     var yaxis = "Number of "+popclass;
@@ -170,29 +155,59 @@ function buildBarChart(popclass, nutr_text, nutr_value, jsonBarData, jsonLineDat
         });
         // chart.dispatch.on('stateChange', function(e) { nv.log('New State:', JSON.stringify(e)); });
 
-        //CREATE GUIDELINES LINE
-        var gd_value = guidelines[popclass][nutr_value];
-        if(guidelines[popclass][nutr_value] !== null) {
-            console.log("gd_value: "+gd_value);
-            var margin = {top: 50, right: 80, bottom: 30, left: 80}; //margin from chart declaration
-            var xScale = chart.xAxis.scale(); //calculate the yScale
-            var xValue = gd_value;
-            svg.append("line")
-                .style("stroke", "#00FF00")
-                // .style("stroke-width", "2.5px")
-                .attr("x1", xScale(xValue) + margin.left)
-                .attr("y1", margin.top)
-                .attr("x2", xScale(xValue) + margin.left)
-                .attr("y2", height - margin.bottom);
-            
-            var gltext = "XXX"
-            d3.select("#chart1 svg")
+        addTitle();
+        drawGuideLine();
+        window.addEventListener('resize', addTitle);
+        window.addEventListener('resize', drawGuideLine);
+
+        //ADD TITLE
+        function addTitle(){
+            d3.selectAll("#svgtitle").remove();
+            var height = parseInt(svg.style("height"), 10);
+            var width = parseInt(svg.style("width"), 10);
+            var x = (width / 2);
+            var y = 12;
+            var ctext = "Chart of "+popclass;
+            d3.select('#chart1 svg')
                 .append("text")
-                .style("stroke", "#00FF00")
-                .attr("x", xScale(xValue) + margin.left)
-                .attr("y", margin.top-10)
-                .attr("text-anchor", "middle")
-                .text(gltext);
+                .attr("id","svgtitle")
+                .attr("x", x)          
+                .attr("y", y)
+                .attr("text-anchor", "middle")  
+                .style("font-size", "16px") 
+                .style("text-decoration", "underline")
+                .text(ctext);
+        }
+
+        //CREATE GUIDELINES LINE
+        function drawGuideLine(){
+            d3.selectAll("#svgline").remove();
+            d3.selectAll("#svgtext").remove();
+            var gd_value = guidelines[popclass][nutr_value];
+            if(guidelines[popclass][nutr_value] !== null && gd_value>minX && gd_value<maxX) {
+                console.log("gd_value: "+gd_value);
+                var margin = {top: 50, right: 80, bottom: 30, left: 80}; //margin from chart declaration
+                var xScale = chart.xAxis.scale(); //calculate the yScale
+                var xValue = gd_value;
+                svg.append("line")
+                    .attr("id","svgline")
+                    .style("stroke", "#34A853")
+                    // .style("stroke-width", "2.5px")
+                    .attr("x1", xScale(xValue) + margin.left)
+                    .attr("y1", margin.top)
+                    .attr("x2", xScale(xValue) + margin.left)
+                    .attr("y2", height - margin.bottom);
+                
+                var gltext = "Guideline"
+                d3.select("#chart1 svg")
+                    .append("text")
+                    .attr("id","svgtext")
+                    .style("stroke", "#34A853")
+                    .attr("x", xScale(xValue) + margin.left)
+                    .attr("y", margin.top-10)
+                    .attr("text-anchor", "middle")
+                    .text(gltext);
+            }
         }
 
         return chart;

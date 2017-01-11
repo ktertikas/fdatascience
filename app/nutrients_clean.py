@@ -13,6 +13,8 @@ def getNutr ( foodcode ) :
 
 	nuc_coll = db.nutrients_clean # create collection name "nutrients_clean"
 	f_con = []
+
+	# Clean names of nutrients and make nutrients that are being used into float numbers 
 	for i in con:
 		dic = {}
 		dic["FoodCode"] = i["Food Code"]

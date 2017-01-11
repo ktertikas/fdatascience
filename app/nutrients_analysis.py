@@ -3,6 +3,9 @@ import numpy as np
 import json
 import matplotlib.pyplot as plt
 
+# In this code snippet we are drawing histograms and boxplots for every nutrient for every food group to get a sense of 
+# what is going on in terms of distribution of the values
+
 client = MongoClient('localhost',27017)
 db = client.fdatascience
 nutrc_foodcode = db.nutrients_clean.distinct("FoodCode")

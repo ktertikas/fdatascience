@@ -3,7 +3,7 @@ from pymongo import MongoClient
 import numpy as np
 from median_nutrients import getMedianNutr
 
-
+# Function to create randomness and a population of 5000 samples 
 def montecarlo(popClass, kg1):
 # print(dic_nutr["vegetables and vegetable products"])
 	dic_nutr = getMedianNutr()
@@ -18,6 +18,10 @@ def montecarlo(popClass, kg1):
 	nutr_keys = ['VitaminC', 'Fat', 'VitaminK', 'Nitrogen', 'Cholesterol', 'EnergyJ', 'VitaminD', 'Glucose', 'Protein', 'Sugars', 'Carbohydrate', 'VitaminB12', 'VitaminE', 'Lactose', 'Sucrose', 'VitaminB6', 'Water', 'EnergyCal']
 	# print(sample_arr)
 	# print(count)
+
+	# We create a random number from 0 to 1.
+	# If the percentage of consumption is smaller than this number, we don't count the median consumption for this specific person
+	# Otherwise, we count it normally.
 	count = np.zeros(number)
 	for i in infants:
 		for j in range(0, sample):
@@ -29,9 +33,10 @@ def montecarlo(popClass, kg1):
 					sample_arr[j,k] = 0.0
 		names.append(i["FoodName"])
 		k = k + 1
-	# print(sample_arr)
-	# print(names)
-
+	
+	# We calculate the values of median consumption for every different nutrient for each of the 5000 sample population person
+	# and we create a final array that has all these values, each line representing a different person
+	# Every column contains the respective nutrient as in the above array nutr_keys
 	final_arr = np.zeros((sample,len(nutr_keys)))
 	count_sam = 0
 	for i in sample_arr:
@@ -49,17 +54,4 @@ def montecarlo(popClass, kg1):
 	final_arr = np.true_divide(final_arr, kg1)
 	# print(final_arr)
 	return final_arr
-# print(final_arr[:,5])
-# print(dic_nutr)
-	# for j in range(1, sample):
-	# 		if x <= i["Percentage"]:
-	# 			sample_arr[j-1,k] = i["Median"]	
-	# 			count[k] = count[k] + 1
-	# 		else:
-	# 			sample_arr[j-1,k] = 0.0
-	# names.append(i["FoodName"])
-	# k = k + 1
-# print(sample_arr)
-# print(count)
-# print(names)
 

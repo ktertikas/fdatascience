@@ -12,6 +12,7 @@ def getConDict ( s_popclass ) :
 		con.append(i)
 	mean_weights = []
 	median_weights = []
+	# calculate mean and median weights consumption for population class
 	for i in con:
 		median_weights.append(float(i["Median consumption in grams/ kg body weight per day"]))
 		mean_weights.append(float(i["Mean consumption in grams/ kg body weight per day"]))
@@ -23,6 +24,7 @@ def getConDict ( s_popclass ) :
 	conc_coll = db.consumption_clean # create collection name "consumption_clean"
 	f_con = []
 	count_row=0
+	# add for every population class the following appropriate key value pairs
 	for i in con:
 		dic = {}
 		dic["PopClass"] = i["Population Class"]

@@ -25,3 +25,7 @@ button {
     width: 80%;
     height: 80%;
 }
+
+.nv-bars rect {
+  width: 15px;
+}

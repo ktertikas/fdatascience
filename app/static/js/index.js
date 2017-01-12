@@ -101,6 +101,7 @@ function findBins(data_arr, popclass, nutr_value){
     var minX = Math.floor(min_bin-gap);
     var maxX = Math.floor(gd_value+gap);
     if(minX <= 0) { minX = 0; }
+    if((gd_value > min_bin && gd_value < max_bin) || gd_value == null) { maxX = Math.floor(max_bin+gap); }
     var final_bins = new Array(bins.length+2);
     final_bins[0]    = new Array(2);
     final_bins[0][0] = minX;
@@ -150,7 +151,7 @@ function buildBarChart(popclass, nutr_text, nutr_value, jsonBarData, jsonLineDat
         // chart.bars.forceX([minX, maxX]).padData(false);
         // chart.lines.forceY([0]).padData(false);
         // chart.bars.forceY([0]).padData(false);
-        
+
         d3.select('#chart1 svg')
             .datum(testdata)
             .transition().duration(500).call(chart);

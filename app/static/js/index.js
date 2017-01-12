@@ -17,6 +17,7 @@ var nutr_arr = [];
 ws.onopen = function(){
     // ws.send("Sent message ok");
     var e = document.getElementById("PopClass");
+    document.getElementById("title").innerHTML = "Chart of Population Class " + e.options[e.selectedIndex].value;
     ws.send(e.options[e.selectedIndex].text);
 };
 
@@ -28,7 +29,7 @@ ws.onmessage = function(event) {
 
 function return_pop(){
 	var d = document.getElementById("PopClass");
-    document.getElementById("title").value = d.options[d.selectedIndex].value;
+    document.getElementById("title").innerHTML = "Chart of Population Class " + d.options[d.selectedIndex].value;
     ws.send(d.options[d.selectedIndex].value);
 }
 

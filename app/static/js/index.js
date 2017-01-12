@@ -28,6 +28,7 @@ ws.onmessage = function(event) {
 
 function return_pop(){
 	var d = document.getElementById("PopClass");
+    document.getElementById("title").value = d.options[d.selectedIndex].value;
     ws.send(d.options[d.selectedIndex].value);
 }
 
@@ -147,9 +148,6 @@ function buildBarChart(popclass, nutr_text, nutr_value, jsonBarData, jsonLineDat
         chart.y2Axis.axisLabel(yaxis);
         chart.xAxis.tickFormat(function(d) { return d3.format(',f')(d) });
 
-        var g = d3.select("#chart1 svg .nv-bar > *");
-        g.attr("width",10);
-
         // console.log("maxX: "+maxX);
         // maxXX = Math.floor((maxX+100)/100)*100;
         // console.log("maxXX: "+maxXX);
@@ -173,7 +171,7 @@ function buildBarChart(popclass, nutr_text, nutr_value, jsonBarData, jsonLineDat
         // window.addEventListener('resize', addTitle);
         window.addEventListener('resize', drawGuideLine);
 
-        //ADD TITLE
+        //ADD TITLE in SVG
         function addTitle(){
             d3.selectAll("#svgtitle").remove();
             var height = parseInt(svg.style("height"), 10);

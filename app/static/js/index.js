@@ -45,11 +45,12 @@ function return_nutr() {
     console.log(final_bins);
     
     var jsonBarData        = {};
-    jsonBarData["key"]     = "Bins of "+document.getElementById("PopClass").options[document.getElementById("PopClass").selectedIndex].text;
+    // jsonBarData["key"]     = "Bins of "+popclass;
     jsonBarData["bar"]     = true;
     jsonBarData["values"]  = final_bins;
     var jsonLineData       = {};
-    jsonLineData["key"]    = "Line of "+popclass;
+    // jsonLineData["key"]    = "Line of "+popclass;
+    jsonLineData["key"]    = "";
     jsonLineData["values"] = final_bins;
 
     // console.log(nutr_value);

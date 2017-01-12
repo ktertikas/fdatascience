@@ -1,13 +1,17 @@
 // console.log('It goes until here');
 var ws = new WebSocket("ws://localhost:8888/vis2");
 
-var nutr_arr = [];
+var nutr_arr   = [];
+var nutr_value = "";
+var nutr_text  = "";
 
 ws.onopen = function(){
     // ws.send("Sent message ok");
     console.log("ws.onopen");
     var e = document.getElementById("Nutr");
-    ws.send(e.options[e.selectedIndex].value);
+    nutr_value = e.options[e.selectedIndex].value;
+    nutr_text = e.options[e.selectedIndex].text;
+    ws.send(nutr_value);
 };
 
 ws.onmessage = function(event) {
@@ -19,7 +23,9 @@ ws.onmessage = function(event) {
 
 function return_nutr() {
 	var d = document.getElementById("Nutr");
-    ws.send(d.options[d.selectedIndex].value);
+    nutr_value = d.options[d.selectedIndex].value;
+    nutr_text = d.options[d.selectedIndex].text;
+    ws.send(nutr_value);
 }
 
 function do_nutr() {
@@ -49,6 +55,11 @@ function buildBarChart(json_obj){
             .showValues(true)
             .duration(250)
             ;
+        chart.xAxis.axisLabel("Population Class");
+        chart.yAxis.axisLabel(nutr_text);
+        chart.yAxis.tickFormat(d3.format(',f'));
+        chart.valueFormat(d3.format(',f'));
+
         d3.select('#chart1 svg')
             .datum(barChart)
             .call(chart);

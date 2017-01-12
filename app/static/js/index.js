@@ -45,7 +45,7 @@ function return_nutr() {
     console.log(final_bins);
     
     var jsonBarData        = {};
-    jsonBarData["key"]     = "Bins of "+document.getElementById("PopClass").options[document.getElementById("PopClass").selectedIndex].text;
+    jsonBarData["key"]     = "Bins of "+popclass;
     jsonBarData["bar"]     = true;
     jsonBarData["values"]  = final_bins;
     var jsonLineData       = {};
@@ -119,7 +119,9 @@ function findBins(data_arr, popclass, nutr_value){
 }
 
 function buildBarChart(popclass, nutr_text, nutr_value, jsonBarData, jsonLineData, minX, maxX){
-    d3.selectAll("svg > *").remove();
+    // d3.selectAll("svg > *").remove();
+    d3.selectAll("svg").remove();
+    d3.select("#chart1").append("svg");
     var svg = d3.select("#chart1 svg");
     var height = parseInt(svg.style("height"), 10);
     var width = parseInt(svg.style("width"), 10);
@@ -143,14 +145,19 @@ function buildBarChart(popclass, nutr_text, nutr_value, jsonBarData, jsonLineDat
         chart.xAxis.axisLabel(nutr_text).axisLabelDistance(-10);
         chart.y1Axis.axisLabel(yaxis);
         chart.y2Axis.axisLabel(yaxis);
+        chart.xAxis.tickFormat(function(d) { return d3.format(',f')(d) });
+
+        var g = d3.select("#chart1 svg .nv-bar > *");
+        g.attr("width",10);
 
         // console.log("maxX: "+maxX);
         // maxXX = Math.floor((maxX+100)/100)*100;
         // console.log("maxXX: "+maxXX);
         // chart.lines.forceX([minX, maxX]).padData(false);
         // chart.bars.forceX([minX, maxX]).padData(false);
-        // chart.lines.forceY([0]).padData(false);
-        // chart.bars.forceY([0]).padData(false);
+
+        chart.lines.forceY([0]).padData(false);
+        chart.bars.forceY([0]).padData(false);
 
         d3.select('#chart1 svg')
             .datum(testdata)
@@ -161,9 +168,9 @@ function buildBarChart(popclass, nutr_text, nutr_value, jsonBarData, jsonLineDat
         });
         // chart.dispatch.on('stateChange', function(e) { nv.log('New State:', JSON.stringify(e)); });
 
-        addTitle();
+        // addTitle();
         drawGuideLine();
-        window.addEventListener('resize', addTitle);
+        // window.addEventListener('resize', addTitle);
         window.addEventListener('resize', drawGuideLine);
 
         //ADD TITLE

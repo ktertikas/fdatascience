@@ -28,39 +28,41 @@
             </div>
         </div>
     </nav>
-    <div class="container one">
-        <div class="row">
-            <div class="col-xs-8">
-                <p>Please select your preferred Population Class: </p> 
-            </div>
-            <div class="col-xs-4">
-                <select id="PopClass" onchange="return_pop()" class="form-control">
-                    <option value="Infants">Infants</option>
-                    <option value="Toddlers">Toddlers</option>
-                    <option value="Other children">Other children</option>
-                    <option value="Adolescents">Adolescents</option>
-                    <option value="Adults" selected="selected">Adults</option>
-                    <option value="Elderly">Elderly</option>
-                    <option value="Very elderly">Very elderly</option>
-                </select>
-            </div>
-            <div class="col-xs-8">
-                <p>Please select your preferred Nutrient: </p> 
-            </div>
-            <div class="col-xs-4">
-                <select id="Nutr" onchange="return_nutr()" class="form-control">
-                    <option value="VitaminC">Vitamin C (mg)</option>
-                    <option value="Fat">Fat (g)</option>
-                    <option value="Cholesterol">Cholesterol (mg)</option>
-                    <option value="Carbohydrate">Carbohydrate (g)</option>
-                    <option value="Protein" selected="selected">Protein (g)</option>
-                    <option value="EnergyCal" selected="selected">Energy (Cal)</option>
-                </select>
+    <div class="section">
+        <div class="container one">
+            <div class="row">
+                <div class="col-xs-8">
+                    <p>Please select your preferred Population Class: </p> 
+                </div>
+                <div class="col-xs-4">
+                    <select id="PopClass" onchange="return_pop()" class="form-control">
+                        <option value="Infants">Infants</option>
+                        <option value="Toddlers">Toddlers</option>
+                        <option value="Other children">Other children</option>
+                        <option value="Adolescents">Adolescents</option>
+                        <option value="Adults" selected="selected">Adults</option>
+                        <option value="Elderly">Elderly</option>
+                        <option value="Very elderly">Very elderly</option>
+                    </select>
+                </div>
+                <div class="col-xs-8">
+                    <p>Please select your preferred Nutrient: </p> 
+                </div>
+                <div class="col-xs-4">
+                    <select id="Nutr" onchange="return_nutr()" class="form-control">
+                        <option value="VitaminC">Vitamin C (mg)</option>
+                        <option value="Fat">Fat (g)</option>
+                        <option value="Cholesterol">Cholesterol (mg)</option>
+                        <option value="Carbohydrate">Carbohydrate (g)</option>
+                        <option value="Protein" selected="selected">Protein (g)</option>
+                        <option value="EnergyCal" selected="selected">Energy (Cal)</option>
+                    </select>
+                </div>
             </div>
         </div>
-    </div>
-    <div id="chart1" class="col-xs-12 with-3d-shadow with-transitions">
-        <svg> </svg>
+        <div id="chart1" class="col-xs-12 with-3d-shadow with-transitions">
+            <!-- <svg> </svg> -->
+        </div>
     </div>
     <!-- <div style="position:absolute; top: 0; left: 0;"> -->
         <!-- <button onclick="chart.switchYAxisOrder(!chart.switchYAxisOrder()); chart.update();">toggle axis</button> -->

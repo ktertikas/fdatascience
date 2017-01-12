@@ -143,14 +143,16 @@ function buildBarChart(popclass, nutr_text, nutr_value, jsonBarData, jsonLineDat
         chart.xAxis.axisLabel(nutr_text).axisLabelDistance(-10);
         chart.y1Axis.axisLabel(yaxis);
         chart.y2Axis.axisLabel(yaxis);
+        chart.xAxis.tickFormat(function(d) { return d3.format(',f')(d) });
 
         // console.log("maxX: "+maxX);
         // maxXX = Math.floor((maxX+100)/100)*100;
         // console.log("maxXX: "+maxXX);
         // chart.lines.forceX([minX, maxX]).padData(false);
         // chart.bars.forceX([minX, maxX]).padData(false);
-        // chart.lines.forceY([0]).padData(false);
-        // chart.bars.forceY([0]).padData(false);
+
+        chart.lines.forceY([0]).padData(false);
+        chart.bars.forceY([0]).padData(false);
 
         d3.select('#chart1 svg')
             .datum(testdata)

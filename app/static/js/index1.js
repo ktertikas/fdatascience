@@ -49,6 +49,9 @@ function buildBarChart(json_obj){
             .showValues(true)
             .duration(250)
             ;
+        chart.yAxis.tickFormat(d3.format(',f'));
+        chart.valueFormat(d3.format(',f'));
+
         d3.select('#chart1 svg')
             .datum(barChart)
             .call(chart);

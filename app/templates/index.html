@@ -18,21 +18,23 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/">Group 5 App</a>
+                <a class="navbar-brand" href="/">Group 5</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#gdp"><span class="glyphicon glyphicon-home"></span> GDP</a></li>
-                    <li><a href="#"><span class="glyphicon glyphicon-info-sign"></span> About</a></li>
-                    <li><a href="#"><i class="fa fa-envelope-o"></i> Contact</a></li>
+                    <li class="active"><a href="/">Home</a></li>
+                    <li><a href="/summary">Summary</a></li>
                 </ul>
             </div>
         </div>
     </nav>
     <div class="container one">
         <div class="row">
-            <div class="col-xs-12">
-                <select id="PopClass" onchange="return_pop()">
+            <div class="col-xs-8">
+                <p>Please select your preferred Population Class: </p> 
+            </div>
+            <div class="col-xs-4">
+                <select id="PopClass" onchange="return_pop()" class="form-control">
                     <option value="Infants">Infants</option>
                     <option value="Toddlers">Toddlers</option>
                     <option value="Other children">Other children</option>
@@ -42,8 +44,11 @@
                     <option value="Very elderly">Very elderly</option>
                 </select>
             </div>
-            <div class="col-xs-12">
-                <select id="Nutr" onchange="return_nutr()">
+            <div class="col-xs-8">
+                <p>Please select your preferred Nutrient: </p> 
+            </div>
+            <div class="col-xs-4">
+                <select id="Nutr" onchange="return_nutr()" class="form-control">
                     <option value="VitaminC">Vitamin C (mg)</option>
                     <option value="Fat">Fat (g)</option>
                     <option value="Cholesterol">Cholesterol (mg)</option>

@@ -12,8 +12,9 @@ var guidelines =
     "Very elderly"  : { "VitaminC" : 40, "Fat" : 80.5, "Cholesterol" : null, "Carbohydrate" : 275.5, "Protein" : 49.9, "EnergyCal" : 2067}
 };
 
-var nutr_arr = [];
+var nutr_arr   = [];
 var nutr_value = "";
+var nutr_text  = "";
 
 ws.onopen = function(){
     // ws.send("Sent message ok");
@@ -37,7 +38,7 @@ function return_pop(){
 function return_nutr() {
     var nutr = document.getElementById("Nutr");
     nutr_value = nutr.options[nutr.selectedIndex].value;
-    var nutr_text = nutr.options[nutr.selectedIndex].text;
+    nutr_text = nutr.options[nutr.selectedIndex].text;
     var popclass = document.getElementById("PopClass").options[document.getElementById("PopClass").selectedIndex].value;
 
     getArray(nutr_value);
@@ -148,7 +149,11 @@ function buildBarChart(popclass, nutr_text, nutr_value, jsonBarData, jsonLineDat
         chart.xAxis.axisLabel(nutr_text).axisLabelDistance(-10);
         chart.y1Axis.axisLabel(yaxis);
         chart.y2Axis.axisLabel(yaxis);
-        chart.xAxis.tickFormat(function(d) { return d3.format(',f')(d) });
+        // chart.xAxis.tickFormat(function(d) { return d3.format(',f')(d) });
+        chart.tooltip.contentGenerator(function(d) {
+            return '<p>' + yaxis +': '+ d.series[0].value + '</p>' +
+                   '<p>' +  nutr_text +': '+ Math.floor(d.value) + '</p>'
+        });
 
         // console.log("maxX: "+maxX);
         // maxXX = Math.floor((maxX+100)/100)*100;

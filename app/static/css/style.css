@@ -59,7 +59,7 @@ section{
   position:absolute;
   z-index:1;
   left:50%;
-  top:-12%;
+  top:80vh;
   margin-left:-5em;
   background:white;
   width:10em;
@@ -94,6 +94,8 @@ section{
   border-color: white transparent transparent transparent;
   -webkit-transform:rotate(360deg)
 }
-/*.nv-bars rect {
+
+
+.nv-bars rect {
   width: 15px;
-}*/
+}

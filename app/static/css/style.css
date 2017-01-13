@@ -71,6 +71,9 @@ section{
   opacity: 0.44985;
 }
 
+#final-arrow{
+    top:90vh;
+}
 .arrow {
   float:left;
   position:relative;

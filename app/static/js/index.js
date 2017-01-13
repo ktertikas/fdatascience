@@ -168,6 +168,7 @@ function buildBarChart(popclass, nutr_text, nutr_value, jsonBarData, jsonLineDat
         });
         // chart.dispatch.on('stateChange', function(e) { nv.log('New State:', JSON.stringify(e)); });
 
+        // d3.selectAll('.nv-bar').attr('width','15px');
         // addTitle();
         drawGuideLine();
         // window.addEventListener('resize', addTitle);

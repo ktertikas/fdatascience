@@ -203,9 +203,10 @@ function buildBarChart(popclass, nutr_text, nutr_value, jsonBarData, jsonLineDat
                 var margin = {top: 50, right: 80, bottom: 30, left: 80}; //margin from chart declaration
                 var xScale = chart.xAxis.scale(); //calculate the yScale
                 var xValue = gd_value;
+                var gd_color = "red";
                 svg.append("line")
                     .attr("id","svgline")
-                    .style("stroke", "red")
+                    .style("stroke", gd_color)
                     .style("stroke-width", "1px")
                     .attr("x1", xScale(xValue) + margin.left)
                     .attr("y1", margin.top)
@@ -221,13 +222,12 @@ function buildBarChart(popclass, nutr_text, nutr_value, jsonBarData, jsonLineDat
                 }else if(nutr_value=="EnergyCal"){
                     gltext_value = gltext_value + " (Cal)";
                 }
-                
-                var text_color = "red";
+
                 var text_size = "12px";
                 d3.select("#chart1 svg")
                     .append("text")
                     .attr("id","svgtext")
-                    .style("fill", text_color)
+                    .style("fill", gd_color)
                     .style("font-size", text_size)
                     .attr("x", xScale(xValue) + margin.left)
                     .attr("y", margin.top-16)
@@ -237,7 +237,7 @@ function buildBarChart(popclass, nutr_text, nutr_value, jsonBarData, jsonLineDat
                 d3.select("#chart1 svg")
                     .append("text")
                     .attr("id","svgtext2")
-                    .style("fill", text_color)
+                    .style("fill", gd_color)
                     .style("font-size", text_size)
                     .attr("x", xScale(xValue) + margin.left)
                     .attr("y", margin.top-3)

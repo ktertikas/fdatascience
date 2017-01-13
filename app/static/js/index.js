@@ -195,6 +195,7 @@ function buildBarChart(popclass, nutr_text, nutr_value, jsonBarData, jsonLineDat
         function drawGuideLine(){
             d3.selectAll("#svgline").remove();
             d3.selectAll("#svgtext").remove();
+            d3.selectAll("#svgtext2").remove();
             var gd_value = guidelines[popclass][nutr_value];
             if(guidelines[popclass][nutr_value] !== null) {
                 // console.log("gd_value: "+gd_value);
@@ -210,15 +211,24 @@ function buildBarChart(popclass, nutr_text, nutr_value, jsonBarData, jsonLineDat
                     .attr("x2", xScale(xValue) + margin.left)
                     .attr("y2", height - margin.bottom);
                 
-                var gltext = "Guideline"
+                var gltext = "Guideline";
                 d3.select("#chart1 svg")
                     .append("text")
                     .attr("id","svgtext")
                     .style("stroke", "#34A853")
                     .attr("x", xScale(xValue) + margin.left)
-                    .attr("y", margin.top-10)
+                    .attr("y", margin.top-16)
                     .attr("text-anchor", "middle")
                     .text(gltext);
+
+                d3.select("#chart1 svg")
+                    .append("text")
+                    .attr("id","svgtext2")
+                    .style("stroke", "#34A853")
+                    .attr("x", xScale(xValue) + margin.left)
+                    .attr("y", margin.top-3)
+                    .attr("text-anchor", "middle")
+                    .text(gd_value);
             }
         }
 

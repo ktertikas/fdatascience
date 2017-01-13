@@ -13,6 +13,7 @@ var guidelines =
 };
 
 var nutr_arr = [];
+var nutr_value = "";
 
 ws.onopen = function(){
     // ws.send("Sent message ok");
@@ -35,7 +36,7 @@ function return_pop(){
 
 function return_nutr() {
     var nutr = document.getElementById("Nutr");
-    var nutr_value = nutr.options[nutr.selectedIndex].value;
+    nutr_value = nutr.options[nutr.selectedIndex].value;
     var nutr_text = nutr.options[nutr.selectedIndex].text;
     var popclass = document.getElementById("PopClass").options[document.getElementById("PopClass").selectedIndex].value;
 
@@ -204,18 +205,30 @@ function buildBarChart(popclass, nutr_text, nutr_value, jsonBarData, jsonLineDat
                 var xValue = gd_value;
                 svg.append("line")
                     .attr("id","svgline")
-                    .style("stroke", "#34A853")
-                    // .style("stroke-width", "2.5px")
+                    .style("stroke", "red")
+                    .style("stroke-width", "1px")
                     .attr("x1", xScale(xValue) + margin.left)
                     .attr("y1", margin.top)
                     .attr("x2", xScale(xValue) + margin.left)
                     .attr("y2", height - margin.bottom);
                 
                 var gltext = "Guideline";
+                var gltext_value = gd_value;
+                if(nutr_value=="VitaminC"||nutr_value=="Cholesterol"){
+                    gltext_value = gltext_value + " (mg)";
+                }else if(nutr_value=="Fat"||nutr_value=="Carbohydrate"||nutr_value=="Protein"){
+                    gltext_value = gltext_value + " (g)";
+                }else if(nutr_value=="EnergyCal"){
+                    gltext_value = gltext_value + " (Cal)";
+                }
+                
+                var text_color = "red";
+                var text_size = "12px";
                 d3.select("#chart1 svg")
                     .append("text")
                     .attr("id","svgtext")
-                    .style("stroke", "#34A853")
+                    .style("fill", text_color)
+                    .style("font-size", text_size)
                     .attr("x", xScale(xValue) + margin.left)
                     .attr("y", margin.top-16)
                     .attr("text-anchor", "middle")
@@ -224,11 +237,12 @@ function buildBarChart(popclass, nutr_text, nutr_value, jsonBarData, jsonLineDat
                 d3.select("#chart1 svg")
                     .append("text")
                     .attr("id","svgtext2")
-                    .style("stroke", "#34A853")
+                    .style("fill", text_color)
+                    .style("font-size", text_size)
                     .attr("x", xScale(xValue) + margin.left)
                     .attr("y", margin.top-3)
                     .attr("text-anchor", "middle")
-                    .text(gd_value);
+                    .text(gltext_value);
             }
         }
 

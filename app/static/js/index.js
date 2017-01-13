@@ -221,7 +221,7 @@ function buildBarChart(popclass, nutr_text, nutr_value, jsonBarData, jsonLineDat
                 }else if(nutr_value=="Fat"||nutr_value=="Carbohydrate"||nutr_value=="Protein"){
                     gltext_value = gltext_value + " (g)";
                 }else if(nutr_value=="EnergyCal"){
-                    gltext_value = gltext_value + " (Cal)";
+                    gltext_value = gltext_value + " (kCal)";
                 }
 
                 var text_size = "12px";

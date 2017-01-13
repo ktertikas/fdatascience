@@ -9,6 +9,7 @@ ws.onopen = function(){
     // ws.send("Sent message ok");
     console.log("ws.onopen");
     var e = document.getElementById("Nutr");
+    document.getElementById("title").innerHTML = "Summary Chart of " + e.options[e.selectedIndex].text;
     nutr_value = e.options[e.selectedIndex].value;
     nutr_text = e.options[e.selectedIndex].text;
     ws.send(nutr_value);
@@ -23,6 +24,7 @@ ws.onmessage = function(event) {
 
 function return_nutr() {
 	var d = document.getElementById("Nutr");
+    document.getElementById("title").innerHTML = "Summary Chart of " + d.options[d.selectedIndex].text;
     nutr_value = d.options[d.selectedIndex].value;
     nutr_text = d.options[d.selectedIndex].text;
     ws.send(nutr_value);
@@ -36,8 +38,9 @@ function do_nutr() {
 }
 
 function buildBarChart(json_obj){
-    d3.selectAll("svg > *").remove();
-
+    // d3.selectAll("svg > *").remove();
+    d3.selectAll("svg").remove();
+    d3.select("#chart1").append("svg");
     barChart = [
         {
             key: "XXX",

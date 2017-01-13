@@ -26,6 +26,34 @@ button {
     height: 80%;
 }
 
+section{
+    height:100vh;
+}
+
+#background-main{
+    margin-top: 30vh;
+    margin-bottom: 30vh;
+    height: 40vh;
+    background-image:url("../img/title-pattern.png");
+    background-repeat:repeat;
+}
+
+#section0{
+    background-image: url("../img/nutrition1.png");
+    /*background-color: #cccccc;*/
+}
+
+#food-title{
+    font-size: 3em;
+    margin-top: 5%;
+}
+
+#title-text-div{
+
+    position:relative;
+    top:15%;
+    font-size: 130%;
+}
 /*.nv-bars rect {
   width: 15px;
 }*/

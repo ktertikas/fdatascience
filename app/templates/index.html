@@ -7,6 +7,46 @@
     <script src="{{ static_url("js/nv.d3.js") }}"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="{{ static_url("css/style.css") }}" rel="stylesheet" type="text/css">
+    <link href="{{ static_url("js/fullpage/jquery.fullPage.css") }}" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="{{ static_url("js/fullpage/vendors/scrolloverflow.js") }}"></script>
+    <script src="{{ static_url("js/fullpage/jquery.fullPage.js") }}"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            function initialization() {
+                $('#myContainer').fullpage({
+                    /*
+                     sectionsColor: ['#4A6FB1', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+                     */
+                     anchors: ['Home', 'App'],
+                     resize: false,
+                     animateAnchor: false,
+                     scrollOverflow: true,
+                     autoScrolling: true,
+                     responsive: 900,
+                     fitSection: false,
+                     menu: '#menu',
+                     navigation: true,
+                     continuousVertical: false,
+                     css3: true,
+                     onLeave: function (index, nextIndex, direction) {
+                        $("#" + index).attr("class", "");
+                        console.log("onLeave--" + "index: " + index + " nextIndex: " + nextIndex + " direction: " + direction);
+                    },
+                    afterLoad: function (anchorLink, index) {
+                        $("#" + index).attr("class", "active");
+                        console.log("afterLoad--" + "anchorLink: " + anchorLink + " index: " + index);
+                    }
+                });
+            }
+
+            //fullPage.js initialization
+            initialization();
+
+
+        });
+    </script>
 </head>
 <body>
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -22,51 +62,67 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="/">Home</a></li>
+                    <li id="1" class="active"><a href="#Home">Home</a></li>
+                    <li id="2"><a href="#App">Application</a></li>
                     <li><a href="/summary">Summary</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="section">
-        <div class="container one">
-            <div class="row">
-                <div class="col-xs-offset-3 col-xs-6">
-                    <div class="col-xs-7">
-                        <p>Please select your preferred Population Class: </p> 
-                    </div>
-                    <div class="col-xs-5">
-                        <select id="PopClass" onchange="return_pop()" class="form-control">
-                            <option value="Infants">Infants</option>
-                            <option value="Toddlers">Toddlers</option>
-                            <option value="Other children">Other children</option>
-                            <option value="Adolescents">Adolescents</option>
-                            <option value="Adults" selected="selected">Adults</option>
-                            <option value="Elderly">Elderly</option>
-                            <option value="Very elderly">Very elderly</option>
-                        </select>
-                    </div>
-                    <div class="col-xs-7">
-                        <p>Please select your preferred Nutritional Value: </p> 
-                    </div>
-                    <div class="col-xs-5">
-                        <select id="Nutr" onchange="return_nutr()" class="form-control">
-                            <option value="VitaminC">Vitamin C (mg)</option>
-                            <option value="Fat">Fat (g)</option>
-                            <option value="Cholesterol">Cholesterol (mg)</option>
-                            <option value="Carbohydrate">Carbohydrate (g)</option>
-                            <option value="Protein" selected="selected">Protein (g)</option>
-                            <option value="EnergyCal" selected="selected">Energy (Cal)</option>
-                        </select>
+    <div id="myContainer">
+        <div class="section" id="section0">
+            <div id="background-main">
+                <div class="container" id="title-div">
+                    <div class="col-md-12 text-center">
+                        <p id="food-title">Are British People Eating Well?</p>
                     </div>
                 </div>
-                <div class="col-xs-12">
-                    <h1 class="col-xs-12 text-center" id="title"></h1>
-                    <div id="chart1" class="col-xs-12 with-3d-shadow with-transitions">
+                <div class="container text-center" id="title-text-div">
+                    <p>
+                        Interested in Finding Out? Click the Arrow to Start!
+                    </p>
                 </div>
             </div>
         </div>
-        
+        <div class="section">
+            <div class="container one">
+                <div class="row">
+                    <div class="col-xs-offset-3 col-xs-6">
+                        <div class="col-xs-7">
+                            <p>Please select your preferred Population Class: </p> 
+                        </div>
+                        <div class="col-xs-5">
+                            <select id="PopClass" onchange="return_pop()" class="form-control">
+                                <option value="Infants">Infants</option>
+                                <option value="Toddlers">Toddlers</option>
+                                <option value="Other children">Other children</option>
+                                <option value="Adolescents">Adolescents</option>
+                                <option value="Adults" selected="selected">Adults</option>
+                                <option value="Elderly">Elderly</option>
+                                <option value="Very elderly">Very elderly</option>
+                            </select>
+                        </div>
+                        <div class="col-xs-7">
+                            <p>Please select your preferred Nutritional Value: </p> 
+                        </div>
+                        <div class="col-xs-5">
+                            <select id="Nutr" onchange="return_nutr()" class="form-control">
+                                <option value="VitaminC">Vitamin C (mg)</option>
+                                <option value="Fat">Fat (g)</option>
+                                <option value="Cholesterol">Cholesterol (mg)</option>
+                                <option value="Carbohydrate">Carbohydrate (g)</option>
+                                <option value="Protein" selected="selected">Protein (g)</option>
+                                <option value="EnergyCal" selected="selected">Energy (Cal)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <h1 class="col-xs-12 text-center" id="title"></h1>
+                        <div id="chart1" class="col-xs-12 with-3d-shadow with-transitions"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- <div style="position:absolute; top: 0; left: 0;"> -->
         <!-- <button onclick="chart.switchYAxisOrder(!chart.switchYAxisOrder()); chart.update();">toggle axis</button> -->
@@ -75,7 +131,7 @@
     <!-- </div> -->
 <script src="{{ static_url("js/index.js") }}"></script>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
